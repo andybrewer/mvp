@@ -25,7 +25,7 @@
         <h1>A <u>minimalist</u> stylesheet for HTML elements</h1>
         <p><b>No class names, no frameworks,</b> just <em>semantic</em> HTML and <mark>you're done</mark>.</p>
         <br>
-        <p><a href="/"><i>Docs (coming soon)</i></a><a href="./mvp.css"><b>Download (5kb) &rarr;</b></a></p>
+        <p><a href="/"><i>Docs (coming soon)</i></a><a href="./mvp.css"><b>Download (6kb) &rarr;</b></a></p>
     </header>
     <main>
         <hr>
@@ -143,6 +143,9 @@
             <p><i>Design</i>&nbsp;&nbsp; <progress max="100" value="0">0</progress></p>
             <p><i>HTML</i>&nbsp;&nbsp;&nbsp;&nbsp; <progress max="100" value="100">100</progress></p>
             <br><br>
+            <h4>&mdash; Is there a minified version?</h4>
+            <p>No.</p>
+            <br><br>
             <h4>&mdash; How can I improve my design?</h4>
             <p>Here are some helpful resources:</p>
             <ul>
@@ -233,7 +236,7 @@
         let model = document.getElementById("model").value;
         let skill = document.getElementById("skill").value;
         let results = document.getElementById("results");
-        results.innerHTML = `<br><h3>My next MVP &mdash;</h3><p>A <i>${model}</i> <b>${company} for ${market}</b> but with <mark>${skill}</mark> and a founder who ${job}.</p>`;
+        results.innerHTML = `<br><h3>Amazing Idea &mdash;</h3><p>A ${model} <mark><b>${company} for ${market}</b></mark>!<br>But with <u>${skill}</u> and a founder who has experience with <i>"${job}"</i>.</p>`;
         return false;
     }
 </script>
