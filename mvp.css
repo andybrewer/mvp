@@ -26,7 +26,6 @@
 article aside {
     background: var(--color-secondary-accent);
     border-left: 4px solid var(--color-secondary);
-    mix-blend-mode: difference;
     padding: 0.01rem 0.8rem;
 }
 
