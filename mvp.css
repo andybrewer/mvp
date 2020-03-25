@@ -292,6 +292,7 @@ table {
     border-radius: var(--border-radius);
     border-spacing: 0;
     max-width: 100%;
+    overflow: hidden;
     padding: 0;
 }
 
