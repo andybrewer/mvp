@@ -284,6 +284,8 @@ textarea {
 
 select {
     width: 100%;
+    appearance: none;
+    -moz-appearance: none;
     -webkit-appearance: none;
     background: transparent url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSdibGFjaycgaGVpZ2h0PScyNCcgdmlld0Jve…BsNSA1IDUtNXonLz48cGF0aCBkPSdNMCAwaDI0djI0SDB6JyBmaWxsPSdub25lJy8+PC9zdmc+) no-repeat center right;
 }
