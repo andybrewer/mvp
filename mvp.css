@@ -291,7 +291,7 @@ table {
     border: 1px solid var(--color-bg-secondary);
     border-radius: var(--border-radius);
     border-spacing: 0;
-    max-width: 80%;
+    max-width: 100%;
     padding: 0;
 }
 
