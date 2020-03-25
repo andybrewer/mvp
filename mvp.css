@@ -275,10 +275,19 @@ textarea {
 }
 
 input,
+select,
 textarea {
     border: 1px solid var(--color-bg-secondary);
     border-radius: var(--border-radius);
     padding: 0.4rem 0.8rem;
+}
+
+select {
+    width: 100%;
+    -webkit-appearance: none;
+    background: transparent url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSdibGFjaycgaGVpZ2h0PScyNCcgdmlld0Jve…BsNSA1IDUtNXonLz48cGF0aCBkPSdNMCAwaDI0djI0SDB6JyBmaWxsPSdub25lJy8+PC9zdmc+) no-repeat center right;
+}
+
 }
 
 label {
