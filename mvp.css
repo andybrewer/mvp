@@ -1,3 +1,5 @@
+/* MVP.css v1.0.1 - by Andy Brewer */
+
 :root {
     --border-radius: 5px;
     --box-shadow: 2px 2px 10px;
@@ -32,8 +34,6 @@
         --color-text-secondary: #666;
     }
 }
-
-/* MVP.css v1.0 - by Andy Brewer */
 
 /* Layout */
 article aside {
@@ -301,13 +301,12 @@ label {
 
 /* Tables */
 table {
-    display: block;
-    overflow-x: scroll;
-    overflow-y: hidden;
     border: 1px solid var(--color-bg-secondary);
     border-radius: var(--border-radius);
     border-spacing: 0;
-    max-width: 100%;
+    display: block;
+    overflow-x: scroll;
+    overflow-y: hidden;
     padding: 0;
 }
 
