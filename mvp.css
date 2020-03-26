@@ -20,6 +20,19 @@
     --width-content: 1080px;
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-accent: #118aee7f;
+        --color-bg: #333333;
+        --color-bg-secondary: #555;
+        --color-secondary: #6df216;
+        --color-secondary-accent: #6df2167f;
+        --color-shadow: #bbbbbb20;
+        --color-text: #fff;
+        --color-text-secondary: #666;
+    }
+}
+
 /* MVP.css v1.0 - by Andy Brewer */
 
 /* Layout */
