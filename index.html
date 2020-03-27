@@ -15,7 +15,7 @@
 <body>
     <header>
         <nav>
-            <a href="https://andybrewer.github.io/mvp/"><img src="./img/logo.png" height="70"></a>
+            <a href="https://andybrewer.github.io/mvp/"><img alt="MVP.css" src="./img/logo.png" height="70"></a>
             <ul>
                 <li>Home</li>
                 <li><a href="#docs">Docs</a></li>
@@ -26,8 +26,8 @@
         <h1>A <u>minimalist</u> stylesheet for HTML elements</h1>
         <p><b>No class names, no frameworks,</b> just <em>semantic</em> HTML and <mark>you're done</mark>.</p>
         <br>
-        <p><a href="./quickstart.html.txt" target="_blank"><i>Quickstart Template &nearr;</i></a><a href="./mvp.css"
-                target="_blank"><b>Download MVP (6kb) &nearr;</b></a></p>
+        <p><a download="mvp.html" href="./mvp.html" target="_blank"><i>HTML Template &nearr;</i></a><a
+                download="mvp.css" href="./mvp.css" target="_blank"><b>MVP.css (7kb) &nearr;</b></a></p>
     </header>
     <main>
         <hr>
@@ -37,7 +37,7 @@
                 <p>For a clean looking design that doesn't get in the way</p>
             </header>
             <aside>
-                <img src="./img/html.svg" height="150">
+                <img alt="HTML only" src="./img/html.svg" height="150">
                 <h3>HTML and You're Done</h3>
                 <p>MVP styles your root HTML elements, so you don't need to learn a new CSS framework or naming
                     conventions.</p>
@@ -45,14 +45,14 @@
                             &nearr;</em></a></p>
             </aside>
             <aside>
-                <img src="./img/mobile.svg" height="150">
+                <img alt="Mobile friendly" src="./img/mobile.svg" height="150">
                 <h3>Mobile-friendly UI</h3>
                 <p>MVP is designed to look great on all browsers and devices out of the box for rapid prototyping.
                 </p>
                 <p>It's like an amped up CSS reset that you can toss into any project to get decent styling.</p>
             </aside>
             <aside>
-                <img src="./img/license.svg" height="150">
+                <img alt="MIT license" src="./img/license.svg" height="150">
                 <h3>MIT License</h3>
                 <p>MVP is released under the permissive MIT license so you can freely use it however you'd like.</p>
                 <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
@@ -61,10 +61,11 @@
         <hr>
         <section id="testimonials">
             <blockquote>
-                <img src="./img/icon-quote.svg" height="80"><br>
+                <img alt="Quote" src="./img/icon-quote.svg" height="80"><br>
                 "By far the easiest stylesheet I've ever used. It integrates easily into <s>one</s> all of my
                 startup&nbsp;projects."
-                <footer><img src="./img/brand.png" height="36"><br><br><i>- Andy Brewer, Author of MVP.css</i></footer>
+                <footer><img alt="MVP.css" src="./img/brand.png" height="36"><br><br><i>- Andy Brewer, Author of
+                        MVP.css</i></footer>
             </blockquote>
         </section>
         <hr>
@@ -127,7 +128,7 @@
                 <p>More building and less designing with "set and forget" styling.</p>
             </header>
             <figure>
-                <img src="./img/stock.jpg" alt="Stock photo" width="100%">
+                <img alt="Stock photo" src="./img/stock.jpg">
                 <figcaption><i>"Uber for X" brainstorming session</i></figcaption>
             </figure>
         </div>
@@ -136,90 +137,114 @@
             <h2>Docs</h2>
             <h3 id="html">HTML Reference</h3>
             <aside>
-                <p>For a showcase of each styled element, check out the <a href="./quickstart.html.txt"
-                        target="_blank">quickstart template
-                        &nearr;</a>.</p>
+                <p>For a showcase of each styled element, check out the <a download="mvp.html" href="./mvp.html"
+                        target="_blank">quickstart template &nearr;</a>.</p>
             </aside><br>
-            <p>MVP.css automatically styles the following HTML elements:</p>
+            <p>MVP.css works with the following HTML elements:</p>
             <ul>
-                <li><code>&lt;a&gt;</code> <small>&mdash; text links</small></li>
-                <ul>
-                    <li><code>&lt;a&gt;&lt;b&gt;</code>, <code>&lt;a&gt;&lt;strong&gt;</code> <small>&mdash; solid link
-                            buttons</small>
-                    </li>
-                    <li><code>&lt;a&gt;&lt;em&gt;</code>, <code>&lt;a&gt;&lt;i&gt;</code> <small>&mdash; outlined link
-                            buttons</small>
-                    </li>
-                </ul>
-                <li><code>&lt;article&gt;</code> <small>&mdash; content area with normal styling</small></li>
-                <ul>
-                    <li><code>&lt;article&gt;&lt;aside&gt;</code> <small>&mdash; text callout</small>
-                    </li>
-                </ul>
-                <li><code>&lt;blockquote&gt;</code> <small>&mdash; quote callout</small></li>
-                <ul>
-                    <li><code>&lt;blockquote&gt;&lt;footer&gt;</code> <small>&mdash; quote attribution</small>
-                    </li>
-                </ul>
+                <li><code>&lt;a&gt;</code> <small>&mdash; text links</small>
+                    <ul>
+                        <li><code>&lt;a&gt;&lt;b&gt;</code>, <code>&lt;a&gt;&lt;strong&gt;</code> <small>&mdash; solid
+                                link buttons</small>
+                        </li>
+                        <li><code>&lt;a&gt;&lt;em&gt;</code>, <code>&lt;a&gt;&lt;i&gt;</code> <small>&mdash; outlined
+                                link buttons</small>
+                        </li>
+                    </ul>
+                </li>
+                <li><code>&lt;article&gt;</code> <small>&mdash; content area with normal styling</small>
+                    <ul>
+                        <li><code>&lt;article&gt;&lt;aside&gt;</code> <small>&mdash; text callout</small>
+                        </li>
+                    </ul>
+                </li>
+                <li><code>&lt;blockquote&gt;</code> <small>&mdash; quote callout</small>
+                    <ul>
+                        <li><code>&lt;blockquote&gt;&lt;footer&gt;</code> <small>&mdash; quote attribution</small>
+                        </li>
+                    </ul>
+                </li>
                 <li><code>&lt;body&gt;</code> <small>&mdash; default parent element</small></li>
                 <li><code>&lt;button&gt;</code> <small>&mdash; form buttons</small></li>
                 <li><code>&lt;code&gt;</code> <small>&mdash; inline code highlighting</small></li>
-                <li><code>&lt;figure&gt;</code> <small>&mdash; image callouts</small></li>
-                <ul>
-                    <li><code>&lt;figure&gt;&lt;figcaption&gt;</code> <small>&mdash; image callout captions</small></li>
-                </ul>
-                <li><code>&lt;footer&gt;</code> <small>&mdash; footer area</small></li>
-                <li><code>&lt;form&gt;</code> <small>&mdash; small form area</small></li>
-                <ul>
-                    <li><code>&lt;form&gt;&lt;input&gt;</code> <small>&mdash; short input field</small></li>
-                    <li><code>&lt;form&gt;&lt;label&gt;</code> <small>&mdash; form field labels</small></li>
-                    <li><code>&lt;form&gt;&lt;select&gt;</code> <small>&mdash; dropdown options container</small></li>
+                <li><code>&lt;details&gt;</code> <small>&mdash; default expandable content section</small>
                     <ul>
-                        <li><code>&lt;form&gt;&lt;select&gt;&lt;option&gt;</code> <small>&mdash; dropdown option
-                                items</small></li>
+                        <li><code>&lt;details&gt;&lt;summary&gt;</code> <small>&mdash; expandable heading</small></li>
                     </ul>
-                    <li><code>&lt;form&gt;&lt;textarea&gt;</code> <small>&mdash; large input field</small></li>
-                </ul>
+                </li>
+                <li><code>&lt;div&gt;</code> <small>&mdash; unstyled element</small></li>
+                <li><code>&lt;figure&gt;</code> <small>&mdash; image callouts</small>
+                    <ul>
+                        <li><code>&lt;figure&gt;&lt;figcaption&gt;</code> <small>&mdash; image callout captions</small>
+                        </li>
+                    </ul>
+                </li>
+                <li><code>&lt;footer&gt;</code> <small>&mdash; footer area</small></li>
+                <li><code>&lt;form&gt;</code> <small>&mdash; small form area</small>
+                    <ul>
+                        <li><code>&lt;form&gt;&lt;input&gt;</code> <small>&mdash; short input field</small></li>
+                        <li><code>&lt;form&gt;&lt;label&gt;</code> <small>&mdash; form field labels</small></li>
+                        <li><code>&lt;form&gt;&lt;select&gt;</code> <small>&mdash; dropdown options container</small>
+                            <ul>
+                                <li><code>&lt;form&gt;&lt;select&gt;&lt;option&gt;</code> <small>&mdash; dropdown option
+                                        items</small></li>
+                            </ul>
+                        </li>
+                        <li><code>&lt;form&gt;&lt;textarea&gt;</code> <small>&mdash; large input field</small></li>
+                    </ul>
+                </li>
                 <li><code>&lt;header&gt;</code> <small>&mdash; content area with centered styling</small></li>
                 <li><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>,
                     <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code> <small>&mdash; headings</small></li>
                 <li><code>&lt;hr&gt;</code> <small>&mdash; horizontal rule (divider)</small></li>
                 <li><code>&lt;main&gt;</code> <small>&mdash; main content area</small></li>
                 <li><code>&lt;mark&gt;</code> <small>&mdash; text highlighting</small></li>
-                <li><code>&lt;nav&gt;</code> <small>&mdash; top navigation</small></li>
-                <ul>
-                    <li><code>&lt;nav&gt;&lt;ul&gt;</code> <small>&mdash; nav list container</small></li>
-                    <li><code>&lt;nav&gt;&lt;ul&gt;&lt;li&gt;</code> <small>&mdash; nav list items</small></li>
-                </ul>
-                <li><code>&lt;ol&gt;</code> <small>&mdash; numbered list container</small></li>
-                <ul>
-                    <li><code>&lt;ol&gt;&lt;li&gt;</code> <small>&mdash; numbered list items</small></li>
-                </ul>
+                <li><code>&lt;nav&gt;</code> <small>&mdash; top navigation</small>
+                    <ul>
+                        <li><code>&lt;nav&gt;&lt;ul&gt;</code> <small>&mdash; nav list container</small></li>
+                        <li><code>&lt;nav&gt;&lt;ul&gt;&lt;li&gt;</code> <small>&mdash; nav list items</small></li>
+                    </ul>
+                </li>
+                <li><code>&lt;ol&gt;</code> <small>&mdash; numbered list container</small>
+                    <ul>
+                        <li><code>&lt;ol&gt;&lt;li&gt;</code> <small>&mdash; numbered list items</small></li>
+                    </ul>
+                </li>
                 <li><code>&lt;p&gt;</code> <small>&mdash; paragraph tag</small></li>
-                <li><code>&lt;samp&gt;</code> <small>&mdash; large code blocks</small></li>
-                <li><code>&lt;section&gt;</code> <small>&mdash; content area for centered / special content</small></li>
-                <ul>
-                    <li><code>&lt;section&gt;&lt;aside&gt;</code> <small>&mdash; content card</small></li>
-                </ul>
+                <li><code>&lt;pre&gt;</code> <small>&mdash; preformatted text</small>
+                    <ul>
+                        <li><code>&lt;pre&gt;&lt;code&gt;</code> <small>&mdash; code block</small></li>
+                        <li><code>&lt;pre&gt;&lt;samp&gt;</code> <small>&mdash; computer output block</small></li>
+                    </ul>
+                </li>
+                <li><code>&lt;samp&gt;</code> <small>&mdash; inline computer output</small></li>
+                <li><code>&lt;section&gt;</code> <small>&mdash; content area for centered / special content</small>
+                    <ul>
+                        <li><code>&lt;section&gt;&lt;aside&gt;</code> <small>&mdash; content card</small></li>
+                    </ul>
+                </li>
                 <li><code>&lt;small&gt;</code> <small>&mdash; smaller text</small></li>
                 <li><code>&lt;sup&gt;</code> <small>&mdash; raised text (notification bubbles)</small></li>
-                <li><code>&lt;table&gt;</code> <small>&mdash; data table</small></li>
-                <ul>
-                    <li><code>&lt;table&gt;&lt;td&gt;</code> <small>&mdash; data table cell</small></li>
-                    <li><code>&lt;table&gt;&lt;th&gt;</code> <small>&mdash; data table header cell</small></li>
-                    <li><code>&lt;table&gt;&lt;thead&gt;</code> <small>&mdash; data table header section</small></li>
-                    <li><code>&lt;table&gt;&lt;tr&gt;</code> <small>&mdash; data table row</small></li>
-                </ul>
-                <li><code>&lt;ul&gt;</code> <small>&mdash; unordered list container</small></li>
-                <ul>
-                    <li><code>&lt;ul&gt;&lt;li&gt;</code> <small>&mdash; unordered list item</small></li>
-                </ul>
-            </ul><br>
-            <p><code>&lt;div&gt;</code> tags are left unstyled.</p>
+                <li><code>&lt;table&gt;</code> <small>&mdash; data table</small>
+                    <ul>
+                        <li><code>&lt;table&gt;&lt;td&gt;</code> <small>&mdash; data table cell</small></li>
+                        <li><code>&lt;table&gt;&lt;th&gt;</code> <small>&mdash; data table header cell</small></li>
+                        <li><code>&lt;table&gt;&lt;thead&gt;</code> <small>&mdash; data table header section</small>
+                        </li>
+                        <li><code>&lt;table&gt;&lt;tr&gt;</code> <small>&mdash; data table row</small></li>
+                    </ul>
+                </li>
+                <li><code>&lt;ul&gt;</code> <small>&mdash; unordered list container</small>
+                    <ul>
+                        <li><code>&lt;ul&gt;&lt;li&gt;</code> <small>&mdash; unordered list item</small></li>
+                    </ul>
+                </li>
+            </ul>
             <br>
             <h3 id="variables">Modifying the CSS variables</h3>
             <p>MVP.css includes a list of CSS variables. Editing these variables will change the styles globally.</p>
-            <samp>
+            <pre>
+                <code>
                 :root {<br>
                 &nbsp;&nbsp;--border-radius: 5px;<br>
                 &nbsp;&nbsp;--box-shadow: 2px 2px 10px;<br>
@@ -241,79 +266,90 @@
                 &nbsp;&nbsp;--width-card-wide: 800px;<br>
                 &nbsp;&nbsp;--width-content: 1080px;<br>
                 }
-            </samp>
+                </code>
+            </pre>
             <p>Custom styles can be added below the <code>/* Custom styles */</code> comment at the end of the file.</p>
         </article>
         <hr>
         <article id="faq">
             <h2>Frequently Asked Questions</h2>
             <br>
-            <h4 id="why">&mdash; Why would I use this?</h4>
-            <p>If you just want to launch already.</p>
-            <p><sup>PRO TIP</sup> An MVP is a temporary site, it doesn't have to be <i>and shouldn't be</i> perfect.</p>
-            <br><br>
-            <h4 id="skills">&mdash; What skills will I need?</h4>
-            <p>Mostly HTML, maybe a hint of CSS if you want to get fancy.</p>
-            <p><i>CSS</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <progress max="100" value="5">5</progress></p>
-            <p><i>Design</i>&nbsp;&nbsp; <progress max="100" value="0">0</progress></p>
-            <p><i>HTML</i>&nbsp;&nbsp;&nbsp;&nbsp; <progress max="100" value="100">100</progress></p>
-            <br><br>
-            <h4 id="minified">&mdash; Is there a minified version?</h4>
-            <p>No.</p>
-            <br><br>
-            <h4 id="design">&mdash; How can I improve my design?</h4>
-            <p>Here are some helpful resources:</p>
-            <ul>
-                <li>Emojis - <a href="https://www.emojicopy.com/" target="_blank">Emojicopy
-                        &nearr;</a></li>
-                <li>Icons - <a href="https://www.toptal.com/designers/htmlarrows/" target="_blank">HTML Entities
-                        List by TopTal
-                        &nearr;</a></li>
-                <li>Icons - <a href="https://thenounproject.com/" target="_blank">TheNounProject
-                        &nearr;</a></li>
-                <li>Illustrations - <a href="https://gallery.manypixels.co/" target="_blank">Manypixels
-                        &nearr;</a></li>
-                <li>Illustrations - <a href="https://undraw.co/illustrations" target="_blank">Undraw &nearr;</a>
-                </li>
-                <li>Logo - <a href="https://www.namecheap.com/logo-maker/app/" target="_blank">Namecheap Logo
-                        Maker &nearr;</a></li>
-                <li>Product Shots - <a href="https://www.screely.com/" target="_blank">Screely &nearr;</a></li>
-                <li>Stock Photos - <a href="https://www.pexels.com/" target="_blank">Pexels &nearr;</a></li>
-                <li>Stock Photos - <a href="https://unsplash.com/" target="_blank">Unsplash &nearr;</a></li>
-            </ul>
-            <br><br>
-            <h4 id="defaults">&mdash; What if I don't like the default styles?</h4>
-            <p>Most styles are editable through <em>CSS variables</em>. You can also add your own styles
-                inline or at the end of the stylesheet.</p>
-            <p><sup>PRO TIP</sup> If there are two conflicting CSS styles, the last one will take precedence.</p>
-            <samp>
-                body {<br>
-                &nbsp;&nbsp;color: var(--color-text); /* This will get ignored */<br>
-                }<br><br>
-                /* Custom styles */
-                <br><br>
-                body {<br>
-                &nbsp;&nbsp;color: green; /* This will take precedence */<br>
-                }
-            </samp>
-            <br><br>
-            <h4 id="framework">&mdash; What if I still don't like it?</h4>
-            <p>That's OK, you probably shouldn't love your MVP. The goal of MVP.css is to help you
-                feel <i>slightly</i> less embarrased about it.</p>
-            <p><span style="font-size: xx-large; position: relative; top: 6px; margin-right: 7px;">👉</span> If you
-                want a CSS framework with more features check out <a href="https://bulma.io/" target="_blank">Bulma
-                    &nearr;</a> or <a href="https://tailwindcss.com/" target="_blank">Tailwind &nearr;</a>.</p>
+            <details>
+                <summary>Why would I use this?</summary>
+                <p>If you just want to launch already.</p>
+                <p><sup>PRO TIP</sup> An MVP is a temporary site, it doesn't have to be <i>and shouldn't be</i> perfect.
+                </p>
+            </details>
+            <details>
+                <summary>What skills will I need?</summary>
+                <p>Mostly HTML, maybe a hint of CSS if you want to get fancy.</p>
+                <p><i>CSS</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <progress max="100" value="5">5</progress></p>
+                <p><i>Design</i>&nbsp;&nbsp; <progress max="100" value="0">0</progress></p>
+                <p><i>HTML</i>&nbsp;&nbsp;&nbsp;&nbsp; <progress max="100" value="100">100</progress></p>
+            </details>
+            <details>
+                <summary>Is there a minified version?</summary>
+                <p>No, you don't need one for an MVP.</p>
+            </details>
+            <details>
+                <summary>How can I improve my design?</summary>
+                <p>Here are some helpful resources:</p>
+                <ul>
+                    <li>Emojis - <a href="https://www.emojicopy.com/" target="_blank">Emojicopy
+                            &nearr;</a></li>
+                    <li>Icons - <a href="https://www.toptal.com/designers/htmlarrows/" target="_blank">HTML Entities
+                            List by TopTal
+                            &nearr;</a></li>
+                    <li>Icons - <a href="https://thenounproject.com/" target="_blank">TheNounProject
+                            &nearr;</a></li>
+                    <li>Illustrations - <a href="https://gallery.manypixels.co/" target="_blank">Manypixels
+                            &nearr;</a></li>
+                    <li>Illustrations - <a href="https://undraw.co/illustrations" target="_blank">Undraw &nearr;</a>
+                    </li>
+                    <li>Logo - <a href="https://www.namecheap.com/logo-maker/app/" target="_blank">Namecheap Logo
+                            Maker &nearr;</a></li>
+                    <li>Product Shots - <a href="https://www.screely.com/" target="_blank">Screely &nearr;</a></li>
+                    <li>Stock Photos - <a href="https://www.pexels.com/" target="_blank">Pexels &nearr;</a></li>
+                    <li>Stock Photos - <a href="https://unsplash.com/" target="_blank">Unsplash &nearr;</a></li>
+                </ul>
+            </details>
+            <details>
+                <summary>What if I don't like the default styles?</summary>
+                <p>Most styles are editable through <em>CSS variables</em>. You can also add your own styles
+                    inline or at the end of the stylesheet.</p>
+                <p><sup>PRO TIP</sup> If there are two conflicting CSS styles, the last one will take precedence.</p>
+                <pre>
+                    <code>
+                    body {<br>
+                    &nbsp;&nbsp;color: var(--color-text); /* This will get ignored. */<br>
+                    }<br><br>
+                    /* Custom styles */
+                    <br><br>
+                    body {<br>
+                    &nbsp;&nbsp;color: green; /* This will take precedence */<br>
+                    }
+                    </code>
+                </pre>
+            </details>
+            <details>
+                <summary>What if I still don't like it?</summary>
+                <p>That's OK, you probably shouldn't love your MVP. The goal of MVP.css is to help you
+                    feel <i>slightly</i> less embarrased about it.</p>
+                <p><span style="font-size: xx-large; position: relative; top: 6px; margin-right: 7px;">👉</span> If you
+                    want a CSS framework with more features check out <a href="https://bulma.io/" target="_blank">Bulma
+                        &nearr;</a> or <a href="https://tailwindcss.com/" target="_blank">Tailwind &nearr;</a>.</p>
+            </details>
         </article>
         <hr>
         <section id="ideas">
             <header>
-                <img src="./img/idea.svg" height="200">
+                <img alt="Idea" src="./img/idea.svg" height="200">
                 <h2>What can you build with MVP.css?</h2>
                 <p>Free ideas below &darr;</p>
             </header>
             <form>
                 <header>
-                    <img src="./img/brand.png" height="80">
+                    <img alt="MVP.css" src="./img/brand.png" height="80">
                 </header>
                 <label for="skill">A skill you have:</label>
                 <input type="text" id="skill" name="skill" size="28" placeholder="Your skill">
@@ -338,22 +374,22 @@
                 &nearr;</a><br>
         </p>
     </footer>
+
+    <script>
+        const companies = ["Amazon", "AirBnB", "Craisglist", "eBay", "Facebook", "Google", "Groupon", "Netflix", "PayPal", "Salesforce", "Spotify", "Twitter", "YouTube"];
+        const markets = ["advertising", "agriculture", "AI", "banking", "Big Data", "biotech", "construction", "consulting", "finance", "government", "health care", "HR", "insurance", "manufacturing", "pharmaceuticals", "real estate", "the cloud", "transportation"];
+
+        function newIdea() {
+            let company = companies[Math.floor(Math.random() * companies.length)];
+            let job = document.getElementById("job").value;
+            let market = markets[Math.floor(Math.random() * markets.length)];
+            let model = document.getElementById("model").value;
+            let skill = document.getElementById("skill").value;
+            let results = document.getElementById("results");
+            results.innerHTML = `<br><h3>Amazing Idea &mdash;</h3><p>A ${model} <mark><b>${company} for ${market}</b></mark>!<br>But with <u>${skill}</u> and a founder who has experience with <i>"${job}"</i>.</p>`;
+            return false;
+        }
+    </script>
 </body>
-
-<script lang="js">
-    const companies = ["Amazon", "AirBnB", "Craisglist", "eBay", "Facebook", "Google", "Groupon", "Netflix", "PayPal", "Salesforce", "Spotify", "Twitter", "YouTube"];
-    const markets = ["advertising", "agriculture", "AI", "banking", "Big Data", "biotech", "construction", "consulting", "finance", "government", "health care", "HR", "insurance", "manufacturing", "pharmaceuticals", "real estate", "the cloud", "transportation"];
-
-    function newIdea() {
-        let company = companies[Math.floor(Math.random() * companies.length)];
-        let job = document.getElementById("job").value;
-        let market = markets[Math.floor(Math.random() * markets.length)];
-        let model = document.getElementById("model").value;
-        let skill = document.getElementById("skill").value;
-        let results = document.getElementById("results");
-        results.innerHTML = `<br><h3>Amazing Idea &mdash;</h3><p>A ${model} <mark><b>${company} for ${market}</b></mark>!<br>But with <u>${skill}</u> and a founder who has experience with <i>"${job}"</i>.</p>`;
-        return false;
-    }
-</script>
 
 </html>
