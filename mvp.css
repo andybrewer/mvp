@@ -253,6 +253,15 @@ button {
     color: var(--color-bg);
 }
 
+button:disabled {
+    opacity: 50%;
+    cursor: not-allowed;
+}
+
+button[disabled]:hover {
+    filter: none;
+}
+
 a em,
 a i {
     border: 2px solid var(--color);
