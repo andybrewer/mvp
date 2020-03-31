@@ -1,4 +1,4 @@
-/* MVP.css v1.1 - https://github.com/andybrewer/mvp */
+/* MVP.css v1.2 - https://github.com/andybrewer/mvp */
 
 :root {
     --border-radius: 5px;
@@ -277,6 +277,25 @@ figure figcaption {
 }
 
 /* Forms */
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+button:disabled,
+input:disabled {
+    background: var(--color-bg-secondary);
+    border-color: var(--color-bg-secondary);
+    color: var(--color-text-secondary);
+    cursor: not-allowed;
+}
+
+button[disabled]:hover {
+    filter: none;
+}
+
 form {
     border: 1px solid var(--color-bg-secondary);
     border-radius: var(--border-radius);
@@ -302,6 +321,11 @@ textarea {
     max-width: var(--width-card-wide);
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+    display: inline-block;
+}
+
 input,
 select,
 textarea {
@@ -311,16 +335,14 @@ textarea {
     padding: 0.4rem 0.8rem;
 }
 
+input[readonly],
+textarea[readonly] {
+    background-color: var(--color-bg-secondary);
+}
+
 label {
     font-weight: bold;
     margin-bottom: 0.2rem;
-}
-
-button:focus,
-input:focus,
-select:focus,
-textarea:focus {
-    outline: none;
 }
 
 /* Tables */

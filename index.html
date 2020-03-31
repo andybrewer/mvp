@@ -351,17 +351,25 @@
                 <header>
                     <img alt="MVP.css" src="./img/brand.png" height="80">
                 </header>
-                <label for="skill">A skill you have:</label>
-                <input type="text" id="skill" name="skill" size="28" placeholder="Your skill">
-                <label for="model">Ideal business model:</label>
+                <label for="company">A company you like:</label>
+                <input type="text" id="company" name="company" size="28" placeholder="Company name">
+                <label for="industry">A hobby you like:</label>
+                <textarea cols="28" rows="2" id="hobby"></textarea>
+                <label for="model">Business Model:</label>
                 <select id="model">
                     <option value="bootstrapped">bootstrapped</option>
-                    <option value="venture-backed">funded</option>
+                    <option value="VC-backed">funded</option>
                 </select>
-                <label for="job">What you did at your last job:</label>
-                <textarea cols="28" rows="5" id="job"></textarea>
-                <button type="submit" onclick="return newIdea();">Submit</button>
-                <div id="results" style="max-width: 400px;">
+                <label for="radio">Team Size:</label>
+                <input type="radio" name="founders" selected="selected" value="a solo founder" checked> Solo
+                <input type="radio" name="founders" value="two co-founders"> Co-founders
+                <label for="checkbox">Focus:</label>
+                <input type="checkbox" name="focus[]" value="price" checked> Price
+                <input type="checkbox" name="focus[]" value="service"> Service
+                <input type="checkbox" name="focus[]" value="features"> Features
+                <br>
+                <button type="submit" onclick="newIdea(); return false;">Submit</button>
+                <div id="results" style="max-width: 100%;">
 
                 </div>
             </form>
@@ -376,18 +384,16 @@
     </footer>
 
     <script>
-        const companies = ["Amazon", "AirBnB", "Craisglist", "eBay", "Facebook", "Google", "Groupon", "Netflix", "PayPal", "Salesforce", "Spotify", "Twitter", "YouTube"];
-        const markets = ["advertising", "agriculture", "AI", "banking", "Big Data", "biotech", "construction", "consulting", "finance", "government", "health care", "HR", "insurance", "manufacturing", "pharmaceuticals", "real estate", "the cloud", "transportation"];
-
         function newIdea() {
-            let company = companies[Math.floor(Math.random() * companies.length)];
-            let job = document.getElementById("job").value;
-            let market = markets[Math.floor(Math.random() * markets.length)];
+            let company = document.getElementById("company").value || "GitHub";
+            let focusAreas = [];
+            document.querySelectorAll("input[name='focus[]']:checked").forEach(el => { focusAreas.push(el.value) });
+            let focus = focusAreas.join(" / ") || "stealthy growth";
+            let founders = document.querySelector("input[name='founders']:checked").value;
+            let hobby = document.getElementById("hobby").value || "design";
             let model = document.getElementById("model").value;
-            let skill = document.getElementById("skill").value;
-            let results = document.getElementById("results");
-            results.innerHTML = `<br><h3>Amazing Idea &mdash;</h3><p>A ${model} <mark><b>${company} for ${market}</b></mark>!<br>But with <u>${skill}</u> and a founder who has experience with <i>"${job}"</i>.</p>`;
-            return false;
+
+            document.getElementById("results").innerHTML = `<br><h3>Amazing Idea &mdash;</h3><p>A ${model} <mark><b>${company} for ${hobby}</b></mark><br>with ${founders} and a focus on<br>${focus}.</p>`;
         }
     </script>
 </body>
