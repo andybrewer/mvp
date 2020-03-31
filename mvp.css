@@ -323,21 +323,11 @@ textarea:focus {
     outline: none;
 }
 
-input:-moz-read-only { /* For Firefox  */
-  background-color: #e4e4e4;
+input[readonly],
+textarea[readonly] { 
+    background-color: var(--color-bg-secondary);
 }
 
-input:read-only {
-  background-color: #e4e4e4;
-}
-
-textarea:-moz-read-only { /* For Firefox  */
-  background-color: #e4e4e4;
-}
-
-textarea:read-only {
-  background-color: #e4e4e4;
-}
 /* Tables */
 table {
     border: 1px solid var(--color-bg-secondary);
