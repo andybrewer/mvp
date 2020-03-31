@@ -323,11 +323,6 @@ textarea:focus {
     outline: none;
 }
 
-input[readonly],
-textarea[readonly] { 
-    background-color: var(--color-bg-secondary);
-}
-
 /* Tables */
 table {
     border: 1px solid var(--color-bg-secondary);
