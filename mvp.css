@@ -140,6 +140,7 @@ nav ul li {
     display: inline-block;
     margin: 0 0.5rem;
 }
+
 /* Nav Dropdown */
 nav ul li:hover ul {
     display: block;
@@ -148,13 +149,13 @@ nav ul li:hover ul {
 nav ul li ul {
     display: none;
     position: absolute;
-    top: 1.2em;
-    left: 0;
+    top: 1.5em;
+    right: 0;
     width: auto;
     height: auto;
-    background: #fff;
+    background: var(--color-bg);
     border: 1px solid var(--color-bg-secondary);
-    padding: .5em 2em;
+    padding: .5em 1em;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow) var(--color-shadow);
 }
