@@ -8,6 +8,10 @@ Live demo: https://andybrewer.github.io/mvp/
 
 ## Versions
 
+### v1.2
+* Added `checkbox` and `radio` input styling
+* Added `disabled` and `readonly` styling
+
 ### v1.1
 * Fixed code blocks to use `<pre><code>` instead of `<samp>`
 * Light styling for `select` fields
@@ -21,3 +25,5 @@ Live demo: https://andybrewer.github.io/mvp/
 * [aembleton](https://github.com/aembleton)
 * [simonw](https://github.com/simonw)
 * [cfv1984](https://github.com/cfv1984)
+* [irfaardy](https://github.com/irfaardy)
+* [ruudud](https://github.com/ruudud)
