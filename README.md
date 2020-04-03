@@ -8,6 +8,11 @@ Live demo: https://andybrewer.github.io/mvp/
 
 ## Versions
 
+### v1.3
+* Updated `button` line-height and font to match link button styles
+* Added a `--font` variable
+* Added dropdown menus
+
 ### v1.2
 * Added `checkbox` and `radio` input styling
 * Added `disabled` and `readonly` styling
@@ -27,3 +32,5 @@ Live demo: https://andybrewer.github.io/mvp/
 * [cfv1984](https://github.com/cfv1984)
 * [irfaardy](https://github.com/irfaardy)
 * [ruudud](https://github.com/ruudud)
+* [edlinkiii](https://github.com/edlinkiii)
+* [DiemenDesign](https://github.com/DiemenDesign)
