@@ -185,6 +185,7 @@ details {
 
 details summary {
     font-weight: bold;
+    cursor: pointer;
 }
 
 details summary:focus {
