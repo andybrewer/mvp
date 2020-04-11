@@ -10,6 +10,7 @@ Live demo: https://andybrewer.github.io/mvp/
 
 ### v1.4
 * Updated `<pre>` styling to use `pre-line` for better line breaks
+* Added hover styling to `<details><summary>` tags
 
 ### v1.3
 * Updated `<button>` `line-height` and `font` to match `<a><b>` button styles
