@@ -427,6 +427,14 @@ blockquote {
     text-align: var(--justify-important);
 }
 
+blockquote p::before {
+    content: '“';
+}
+
+blockquote p::after {
+    content: '”';
+}
+
 blockquote footer {
     color: var(--color-text-secondary);
     display: block;
