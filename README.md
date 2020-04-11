@@ -8,21 +8,24 @@ Live demo: https://andybrewer.github.io/mvp/
 
 ## Versions
 
+### v1.4
+* Updated `<pre>` styling to use `pre-line` for better line breaks
+
 ### v1.3
-* Updated `button` line-height and font to match link button styles
+* Updated `<button>` `line-height` and `font` to match `<a><b>` button styles
 * Added a `--font` variable
 * Added dropdown menus
 
 ### v1.2
-* Added `checkbox` and `radio` input styling
+* Added `checkbox` and `radio` styling for `<input>` fields
 * Added `disabled` and `readonly` styling
 
 ### v1.1
 * Fixed code blocks to use `<pre><code>` instead of `<samp>`
-* Light styling for `select` fields
-* Added `details` and `summary` tags
-* Added `prefers-color-scheme: dark` CSS variables
-* Fixes to `table` rendering
+* Added light styling for `<select>` fields
+* Added `<details>` and `<summary>` tags
+* Added `prefers-color-scheme: dark` media query (commented out by default)
+* Updated `<table>` styling
 
 ## Contributors
 * [andybrewer](https://github.com/andybrewer)
@@ -34,3 +37,5 @@ Live demo: https://andybrewer.github.io/mvp/
 * [ruudud](https://github.com/ruudud)
 * [edlinkiii](https://github.com/edlinkiii)
 * [DiemenDesign](https://github.com/DiemenDesign)
+* [thedamon](https://github.com/thedamon)
+* [hongsw](https://github.com/hongsw)

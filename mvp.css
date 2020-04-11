@@ -1,4 +1,4 @@
-/* MVP.css v1.3 - https://github.com/andybrewer/mvp */
+/* MVP.css v1.4 - https://github.com/andybrewer/mvp */
 
 :root {
     --border-radius: 5px;
@@ -216,15 +216,14 @@ p {
 }
 
 pre {
-    white-space: normal;
+    margin: 1rem 0;
+    max-width: var(--width-card-wide);
+    white-space: pre-line;
 }
 
 pre code,
 pre samp {
-    display: block;
-    margin: 1rem 0;
-    max-width: var(--width-card-wide);
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 small {
