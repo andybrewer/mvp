@@ -377,6 +377,13 @@ label {
     margin-bottom: 0.2rem;
 }
 
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
 /* Tables */
 table {
     border: 1px solid var(--color-bg-secondary);

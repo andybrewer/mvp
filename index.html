@@ -369,13 +369,13 @@
                     <option value="bootstrapped">bootstrapped</option>
                     <option value="VC-backed">funded</option>
                 </select>
-                <label for="radio">Team Size:</label>
-                <input type="radio" name="founders" value="a solo founder" checked> Solo
-                <input type="radio" name="founders" value="two co-founders"> Co-founders
-                <label for="checkbox">Focus:</label>
-                <input type="checkbox" name="focus[]" value="price" checked> Price
-                <input type="checkbox" name="focus[]" value="service"> Service
-                <input type="checkbox" name="focus[]" value="features"> Features
+                <label>Team Size:</label>
+                <input type="radio" id="founders-solo" name="founders" value="a solo founder" checked> <label for="founders-solo">Solo</label>
+                <input type="radio" id="founders-co" name="founders" value="two co-founders">  <label for="founders-co">Co-founders</label>
+                <label>Focus:</label>
+                <input type="checkbox" id="focus-price" name="focus[]" value="price" checked> <label for="focus-price">Price</label>
+                <input type="checkbox" id="focus-service" name="focus[]" value="service"> <label for="focus-service">Service</label>
+                <input type="checkbox" id="focus-features" name="focus[]" value="features"> <label for="focus-features">Features</label>
                 <br>
                 <button type="submit" onclick="newIdea(); return false;">Submit</button>
                 <div id="results" style="max-width: 100%;">
