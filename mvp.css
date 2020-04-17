@@ -1,4 +1,4 @@
-/* MVP.css v1.4 - https://github.com/andybrewer/mvp */
+/* MVP.css v1.5 - https://github.com/andybrewer/mvp */
 
 :root {
     --border-radius: 5px;
@@ -109,8 +109,8 @@ header a b,
 header a em,
 header a i,
 header a strong {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 header nav img {
@@ -188,10 +188,6 @@ details summary {
     cursor: pointer;
 }
 
-details summary:focus {
-    outline: none;
-}
-
 h1,
 h2,
 h3,
@@ -245,6 +241,7 @@ sup {
 /* Links */
 a {
     color: var(--color-secondary);
+    display: inline-block;
     font-weight: bold;
     text-decoration: none;
 }
@@ -264,7 +261,7 @@ button {
     font-size: medium;
     font-weight: bold;
     line-height: var(--line-height);
-    margin: 1.5rem 0 0.5rem 0;
+    margin: 0.5rem 0;
     padding: 1rem 2rem;
 }
 
@@ -309,12 +306,6 @@ figure figcaption {
 }
 
 /* Forms */
-button:focus,
-input:focus,
-select:focus,
-textarea:focus {
-    outline: none;
-}
 
 button:disabled,
 input:disabled {
@@ -356,6 +347,14 @@ textarea {
 input[type="checkbox"],
 input[type="radio"] {
     display: inline-block;
+}
+
+input[type="checkbox"]+label,
+input[type="radio"]+label {
+    display: inline-block;
+    font-weight: normal;
+    position: relative;
+    top: 1px;
 }
 
 input,

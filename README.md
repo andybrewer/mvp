@@ -8,6 +8,11 @@ Live demo: https://andybrewer.github.io/mvp/
 
 ## Versions
 
+### v1.5
+* Added browser default `:focus` styling back in for better tabbed navigation
+* Updated `<a>` styling to use `display: inline-block` for better focus outlines on buttons
+* Added `<label>` styling for `checkbox` and `radio` elements
+
 ### v1.4
 * Updated `<pre>` styling to use `pre-line` for better line breaks
 * Added hover styling to `<details><summary>` tags
@@ -40,3 +45,5 @@ Live demo: https://andybrewer.github.io/mvp/
 * [DiemenDesign](https://github.com/DiemenDesign)
 * [thedamon](https://github.com/thedamon)
 * [hongsw](https://github.com/hongsw)
+* [ericwbailey](https://github.com/ericwbailey)
+* [martin-v](https://github.com/martin-v)
