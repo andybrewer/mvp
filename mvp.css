@@ -415,6 +415,10 @@ table tr td:first-child {
     text-align: var(--justify-normal);
 }
 
+table tr:nth-child(even) {
+  background-color: var(--color-bg-secondary);
+}
+
 /* Quotes */
 blockquote {
     display: block;
