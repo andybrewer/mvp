@@ -1,4 +1,4 @@
-/* MVP.css v1.2 - https://github.com/andybrewer/mvp */
+/* MVP.css v1.5 - https://github.com/andybrewer/mvp */
 
 :root {
     --border-radius: 5px;
@@ -12,6 +12,7 @@
     --color-shadow: #f4f4f4;
     --color-text: #000;
     --color-text-secondary: #999;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     --hover-brightness: 1.2;
     --justify-important: center;
     --justify-normal: left;
@@ -48,7 +49,7 @@ article aside {
 body {
     background: var(--color-bg);
     color: var(--color-text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-family: var(--font);
     line-height: var(--line-height);
     margin: 0;
     overflow-x: hidden;
@@ -108,8 +109,8 @@ header a b,
 header a em,
 header a i,
 header a strong {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 header nav img {
@@ -138,6 +139,32 @@ nav ul {
 nav ul li {
     display: inline-block;
     margin: 0 0.5rem;
+    position: relative;
+    text-align: left;
+}
+
+/* Nav Dropdown */
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul {
+    background: var(--color-bg);
+    border: 1px solid var(--color-bg-secondary);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow) var(--color-shadow);
+    display: none;
+    height: auto;
+    padding: .5rem 1rem;
+    position: absolute;
+    right: 0;
+    top: 1.7rem;
+    width: auto;
+}
+
+nav ul li ul li,
+nav ul li ul li a {
+    display: block;
 }
 
 /* Typography */
@@ -158,10 +185,7 @@ details {
 
 details summary {
     font-weight: bold;
-}
-
-details summary:focus {
-    outline: none;
+    cursor: pointer;
 }
 
 h1,
@@ -188,15 +212,14 @@ p {
 }
 
 pre {
-    white-space: normal;
+    margin: 1rem 0;
+    max-width: var(--width-card-wide);
+    white-space: pre-line;
 }
 
 pre code,
 pre samp {
-    display: block;
-    margin: 1rem 0;
-    max-width: var(--width-card-wide);
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 small {
@@ -218,6 +241,7 @@ sup {
 /* Links */
 a {
     color: var(--color-secondary);
+    display: inline-block;
     font-weight: bold;
     text-decoration: none;
 }
@@ -236,8 +260,13 @@ button {
     display: inline-block;
     font-size: medium;
     font-weight: bold;
-    margin: 1.5rem 0 0.5rem 0;
+    line-height: var(--line-height);
+    margin: 0.5rem 0;
     padding: 1rem 2rem;
+}
+
+button {
+    font-family: var(--font);
 }
 
 button:hover {
@@ -277,12 +306,6 @@ figure figcaption {
 }
 
 /* Forms */
-button:focus,
-input:focus,
-select:focus,
-textarea:focus {
-    outline: none;
-}
 
 button:disabled,
 input:disabled {
@@ -324,6 +347,14 @@ textarea {
 input[type="checkbox"],
 input[type="radio"] {
     display: inline-block;
+}
+
+input[type="checkbox"]+label,
+input[type="radio"]+label {
+    display: inline-block;
+    font-weight: normal;
+    position: relative;
+    top: 1px;
 }
 
 input,
