@@ -416,7 +416,7 @@ table tr td:first-child {
 }
 
 table tr:nth-child(even) {
-  background-color: var(--color-bg-secondary);
+    background-color: var(--color-bg-secondary);
 }
 
 /* Quotes */
