@@ -12,6 +12,7 @@ Live demo: https://andybrewer.github.io/mvp/
 * Added browser default `:focus` styling back in for better tabbed navigation
 * Updated `<a>` styling to use `display: inline-block` for better focus outlines on buttons
 * Added `<label>` styling for `checkbox` and `radio` elements
+* Added striped `<table>`
 
 ### v1.4
 * Updated `<pre>` styling to use `pre-line` for better line breaks
