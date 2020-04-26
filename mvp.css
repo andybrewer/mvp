@@ -357,6 +357,14 @@ input[type="radio"]+label {
     top: 1px;
 }
 
+input[type="reset"],
+button[type="reset"] {
+    background: var(--color-shadow);
+    border: 2px solid var(--color);
+    color: var(--color);
+    float: right;
+}
+
 input,
 select,
 textarea {
