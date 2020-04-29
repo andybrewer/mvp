@@ -179,7 +179,7 @@ samp {
     color: var(--color-text);
     display: inline-block;
     margin: 0 0.1rem;
-    padding: 0rem 0.5rem;
+    padding: 0 0.5rem;
 }
 
 details {
@@ -217,7 +217,7 @@ p {
 pre {
     margin: 1rem 0;
     max-width: var(--width-card-wide);
-    padding: 1rem 0rem;
+    padding: 1rem 0;
 }
 
 pre code,
@@ -387,8 +387,11 @@ table {
     border: 1px solid var(--color-bg-secondary);
     border-radius: var(--border-radius);
     border-spacing: 0;
-    display: block;
+    display: inline-block;
+    max-width: 100%;
+    overflow-x: auto;
     padding: 0;
+    white-space: nowrap;
 }
 
 table td,
