@@ -60,4 +60,4 @@ NPM: https://www.npmjs.com/package/mvp.css
 * [hongsw](https://github.com/hongsw)
 * [ericwbailey](https://github.com/ericwbailey)
 * [martin-v](https://github.com/martin-v)
-* [GrosSacASac])https://github.com/GrosSacASac)
+* [GrosSacASac](https://github.com/GrosSacASac)
