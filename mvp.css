@@ -179,7 +179,7 @@ samp {
     color: var(--color-text);
     display: inline-block;
     margin: 0 0.1rem;
-    padding: 0rem 0.5rem;
+    padding: 0 0.5rem;
 }
 
 details {
@@ -217,7 +217,7 @@ p {
 pre {
     margin: 1rem 0;
     max-width: var(--width-card-wide);
-    padding: 1rem 0rem;
+    padding: 1rem 0;
 }
 
 pre code,
