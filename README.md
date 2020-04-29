@@ -12,6 +12,14 @@ NPM: https://www.npmjs.com/package/mvp.css
 
 ## Versions
 
+### v1.6
+* Added `[hidden]` styling to hide hidden elements
+* Updated alternate table rows to use `--color-accent` for a more branded look
+* Updated `<table>` to use `display: block` and removed `overflow` styling
+* Updated `font` variable to `font-family`
+* Updated `<pre>`, `<code>` and `<samp>` styling to have proper padding and recognize indented content
+* Updated `line-height` to be a number instead of a percentage
+
 ### v1.5
 * Added browser default `:focus` styling back in for better tabbed navigation
 * Updated `<a>` styling to use `display: inline-block` for better focus outlines on buttons
@@ -52,3 +60,4 @@ NPM: https://www.npmjs.com/package/mvp.css
 * [hongsw](https://github.com/hongsw)
 * [ericwbailey](https://github.com/ericwbailey)
 * [martin-v](https://github.com/martin-v)
+* [GrosSacASac])https://github.com/GrosSacASac)

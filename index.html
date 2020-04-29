@@ -26,8 +26,11 @@
         <h1>A <u>minimalist</u> stylesheet for HTML elements</h1>
         <p><b>No class names, no frameworks,</b> just <em>semantic</em> HTML and <mark>you're done</mark>.</p>
         <br>
-        <p><a download="mvp.html" href="./mvp.html" target="_blank"><i>HTML Template &nearr;</i></a><a
-                download="mvp.css" href="./mvp.css" target="_blank"><b>MVP.css (8kb) &nearr;</b></a></p>
+        <p><a download="mvp.html" href="./mvp.html" target="_blank"><i>Download HTML &nearr;</i></a><a
+                download="mvp.css" href="./mvp.css" target="_blank"><b>Download MVP.css (8kb) &nearr;</b></a></p>
+        <br><br>
+        <p><sup>PRO TIP</sup> Add this code to a new HTML
+            file:<br><br><code>&lt;link rel="stylesheet" href="https://unpkg.com/mvp.css"&gt;</code></p>
     </header>
     <main>
         <hr>
@@ -249,29 +252,28 @@
             <p>MVP.css includes a list of CSS variables. Editing these variables will change the styles globally.</p>
             <pre>
                 <code>
-                :root {
-                &nbsp;&nbsp;--border-radius: 5px;
-                &nbsp;&nbsp;--box-shadow: 2px 2px 10px;
-                &nbsp;&nbsp;--color: #118bee;
-                &nbsp;&nbsp;--color-accent: #118bee0b;
-                &nbsp;&nbsp;--color-bg: #fff;
-                &nbsp;&nbsp;--color-bg-secondary: #e9e9e9;
-                &nbsp;&nbsp;--color-secondary: #920de9;
-                &nbsp;&nbsp;--color-secondary-accent: #920de90b;
-                &nbsp;&nbsp;--color-shadow: #f4f4f4;
-                &nbsp;&nbsp;--color-text: #000;
-                &nbsp;&nbsp;--color-text-secondary: #999;
-                &nbsp;&nbsp;--font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-                &nbsp;&nbsp;--hover-brightness: 1.2;
-                &nbsp;&nbsp;--justify-important: center;
-                &nbsp;&nbsp;--justify-normal: left;
-                &nbsp;&nbsp;--line-height: 150%;
-                &nbsp;&nbsp;--width-card: 285px;
-                &nbsp;&nbsp;--width-card-medium: 460px;
-                &nbsp;&nbsp;--width-card-wide: 800px;
-                &nbsp;&nbsp;--width-content: 1080px;
-                }
-
+:root {
+    --border-radius: 5px;
+    --box-shadow: 2px 2px 10px;
+    --color: #118bee;
+    --color-accent: #118bee0b;
+    --color-bg: #fff;
+    --color-bg-secondary: #e9e9e9;
+    --color-secondary: #920de9;
+    --color-secondary-accent: #920de90b;
+    --color-shadow: #f4f4f4;
+    --color-text: #000;
+    --color-text-secondary: #999;
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --hover-brightness: 1.2;
+    --justify-important: center;
+    --justify-normal: left;
+    --line-height: 150%;
+    --width-card: 285px;
+    --width-card-medium: 460px;
+    --width-card-wide: 800px;
+    --width-content: 1080px;
+}
                 </code>
             </pre>
 
@@ -322,21 +324,20 @@
             <details>
                 <summary>What if I don't like the default styles?</summary>
                 <p>Most styles are editable through <em>CSS variables</em>. You can also add your own styles
-                    inline or at the end of the stylesheet.</p>
+                    inline, at the end of MVP.css or in a new stylesheet.</p>
                 <p><sup>PRO TIP</sup> If there are two conflicting CSS styles, the last one will take precedence.</p>
                 <pre>
                     <code>
-                    body {
-                    &nbsp;&nbsp;color: var(--color-text); /* This will get ignored. */
-                    }
+body {
+    color: var(--color-text); /* This will get ignored. */
+}
 
-                    ...
+...
 
-                    /* Custom styles */
-                    body {
-                    &nbsp;&nbsp;color: green; /* This will take precedence */
-                    }
-
+/* Custom styles */
+body {
+    color: green; /* This will take precedence */
+}
                     </code>
                 </pre>
             </details>
