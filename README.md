@@ -4,6 +4,8 @@
 
 Out of the box CSS styling for HTML elements. No class names, no framework to learn.
 
+`<link rel="stylesheet" href="https://unpkg.com/mvp.css">`
+
 Live demo: https://andybrewer.github.io/mvp/
 
 Unpkg: https://unpkg.com/mvp.css
@@ -19,6 +21,7 @@ NPM: https://www.npmjs.com/package/mvp.css
 * Updated `font` variable to `font-family`
 * Updated `<pre>`, `<code>` and `<samp>` styling to have proper padding and recognize indented content
 * Updated `line-height` to be a number instead of a percentage
+* Updated multi-word dropdown menu titles to render on a single line
 
 ### v1.5
 * Added browser default `:focus` styling back in for better tabbed navigation
@@ -40,7 +43,7 @@ NPM: https://www.npmjs.com/package/mvp.css
 * Added `disabled` and `readonly` styling
 
 ### v1.1
-* Fixed code blocks to use `<pre><code>` instead of `<samp>`
+* Updated code blocks to use `<pre><code>` instead of `<samp>`
 * Added light styling for `<select>` fields
 * Added `<details>` and `<summary>` tags
 * Added `prefers-color-scheme: dark` media query (commented out by default)

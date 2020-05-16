@@ -1,4 +1,4 @@
-/* MVP.css v1.6 - https://github.com/andybrewer/mvp */
+/* MVP.css v1.6.2 - https://github.com/andybrewer/mvp */
 
 :root {
     --border-radius: 5px;
@@ -159,10 +159,11 @@ nav ul li ul {
     box-shadow: var(--box-shadow) var(--color-shadow);
     display: none;
     height: auto;
+    left: -2px;
     padding: .5rem 1rem;
     position: absolute;
-    left: -2px;
     top: 1.7rem;
+    white-space: nowrap;
     width: auto;
 }
 
@@ -445,5 +446,3 @@ blockquote footer {
     line-height: var(--line-height);
     padding: 1.5rem 0;
 }
-
-/* Custom styles */

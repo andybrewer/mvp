@@ -140,8 +140,8 @@
             <h2>Docs</h2>
             <h3 id="html">HTML Reference</h3>
             <aside>
-                <p>For a showcase of each styled element, check out the <a download="mvp.html" href="./mvp.html"
-                        target="_blank">quickstart template &nearr;</a>.</p>
+                <p>For a showcase of each styled element, check out the <a href="./mvp.html" target="_blank">quickstart
+                        template &nearr;</a>.</p>
             </aside><br>
             <p>MVP.css works with the following HTML elements:</p>
             <ul>
@@ -328,15 +328,14 @@
                 <p><sup>PRO TIP</sup> If there are two conflicting CSS styles, the last one will take precedence.</p>
                 <pre>
                     <code>
-body {
-    color: var(--color-text); /* This will get ignored. */
+:root {
+    --color: #118bee;
 }
 
-...
+/* Lower in the CSS, or in a 2nd stylesheet */
 
-/* Custom styles */
-body {
-    color: green; /* This will take precedence */
+:root {
+    --color: green; /* This will take precedence */
 }
                     </code>
                 </pre>
