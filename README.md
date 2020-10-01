@@ -2,7 +2,7 @@
 
 # MVP.css — Minimalist stylesheet for HTML elements
 
-Out of the box CSS styling for HTML elements. No class names, no framework to learn.
+Out of the box CSS styling for HTML elements. No class names and no frameworks to learn.
 
 `<link rel="stylesheet" href="https://unpkg.com/mvp.css">`
 
