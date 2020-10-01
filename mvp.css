@@ -84,10 +84,12 @@ section aside {
     margin: 1rem;
     padding: 1.25rem;
     width: var(--width-card);
+    transition: transform 0.4s;
 }
 
 section aside:hover {
     box-shadow: var(--box-shadow) var(--color-bg-secondary);
+    transform: translateY(-1rem) scale(1.03);
 }
 
 section aside img {
