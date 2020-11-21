@@ -1,4 +1,4 @@
-/* MVP.css v1.6.2 - https://github.com/andybrewer/mvp */
+/* MVP.css v1.6.3 - https://github.com/andybrewer/mvp */
 
 :root {
     --border-radius: 5px;
@@ -21,6 +21,36 @@
     --width-card-medium: 460px;
     --width-card-wide: 800px;
     --width-content: 1080px;
+    --onepx: 1px;
+    --twopx: 2px;
+    --fourpx: 2px;
+    --zero-to-dotone: 0 0.1rem;
+    --zero-to-dotfive: 0 0.5rem;
+    --dotzeroone-to-doteight: 0.01rem 0.8rem;
+    --dotone: 0.1rem;
+    --dottwo: 0.2rem;
+    --dottwo-to-zero: 0.2rem 0;
+    --dottwo-to-dotthree: 0.2rem 0.3rem;
+    --dotfour-to-doteight: 0.4rem 0.8rem;
+    --dotfive: 0.5rem;
+    --dotfive-to-zero: 0.5rem 0;
+    --dotfive-to-one: 0.5rem 1rem;
+    --dotfive-to-two: 0.5rem 2rem;
+    --dotseven-to-zero: 0.75rem 0;
+    --one: 1rem;
+    --four: 4rem;
+    --seven: 7rem;
+    --onedotseven: 1.7rem;
+    --onequarter: 1.25rem;
+    --one-to-zero: 1rem 0;
+    --one-to-auto: 1rem auto;
+    --one-to-two: 1rem 2rem;
+    --onedotthree-to-zero: 1.3rem 0;
+    --onedothalf: 1.5rem;
+    --onedothalf-to-zero: 1.5rem 0;
+    --onedothalf-to-one: 1.5rem 1rem;
+    --two-to-one: 2rem 1rem;
+    --four-to-zero: 4rem 0;
 }
 
 /*
@@ -39,11 +69,54 @@
 }
 */
 
+/* Display */
+[hidden],
+nav ul li ul {
+    display: none;
+}
+
+a,
+a b,
+a em,
+a i,
+a strong,
+button,
+code,
+input[type="checkbox"],
+input[type="radio"],
+input[type="checkbox"]+label,
+input[type="radio"]+label,
+nav ul li,
+samp,
+table {
+    display: inline-block;
+}
+
+blockquote,
+blockquote footer,
+form,
+input,
+label,
+nav ul li:hover ul, /* Nav Dropdown */
+nav ul li ul li,
+nav ul li ul li a,
+pre code,
+pre samp,
+select,
+textarea {
+    display: block;
+}
+
+nav,
+section {
+    display: flex;
+}
+
 /* Layout */
 article aside {
+    padding: var(--dotzeroone-to-doteight);
     background: var(--color-secondary-accent);
-    border-left: 4px solid var(--color-secondary);
-    padding: 0.01rem 0.8rem;
+    border-left: var(--fourpx) solid var(--color-secondary);
 }
 
 body {
@@ -53,7 +126,7 @@ body {
     line-height: var(--line-height);
     margin: 0;
     overflow-x: hidden;
-    padding: 1rem 0;
+    padding: var(--one-to-zero);
 }
 
 footer,
@@ -61,28 +134,27 @@ header,
 main {
     margin: 0 auto;
     max-width: var(--width-content);
-    padding: 2rem 1rem;
+    padding: var(--two-to-one);
 }
 
 hr {
-    background-color: var(--color-bg-secondary);
     border: none;
-    height: 1px;
-    margin: 4rem 0;
+    height: var(--onepx);
+    margin: var(--four-to-zero);
+    background-color: var(--color-bg-secondary);
 }
 
 section {
-    display: flex;
     flex-wrap: wrap;
     justify-content: var(--justify-important);
 }
 
 section aside {
-    border: 1px solid var(--color-bg-secondary);
+    margin: var(--one);
+    padding: var(--onequarter);
+    border: var(--onepx) solid var(--color-bg-secondary);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow) var(--color-shadow);
-    margin: 1rem;
-    padding: 1.25rem;
     width: var(--width-card);
 }
 
@@ -92,10 +164,6 @@ section aside:hover {
 
 section aside img {
     max-width: 100%;
-}
-
-[hidden] {
-    display: none;
 }
 
 /* Headers */
@@ -113,63 +181,50 @@ header a b,
 header a em,
 header a i,
 header a strong {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: var(--dotfive);
+    margin-right: var(--dotfive);
 }
 
 header nav img {
-    margin: 1rem 0;
+    margin: var(--one-to-zero);
 }
 
 section header {
-    padding-top: 0;
     width: 100%;
+    padding-top: 0;
 }
 
 /* Nav */
 nav {
+    margin-bottom: var(--seven);
     align-items: center;
-    display: flex;
     font-weight: bold;
     justify-content: space-between;
-    margin-bottom: 7rem;
 }
 
 nav ul {
-    list-style: none;
     padding: 0;
+    list-style: none;
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 0 0.5rem;
+    margin: var(--zero-to-dotfive);
     position: relative;
     text-align: left;
 }
 
-/* Nav Dropdown */
-nav ul li:hover ul {
-    display: block;
-}
-
 nav ul li ul {
+    position: absolute;
+    top: var(--onedotseven);
+    left: -1 * var(--twopx);
+    padding: var(--dotfive-to-one);
+    width: auto;
+    height: auto;
+    white-space: nowrap;
+    border: var(--onepx) solid var(--color-bg-secondary);
     background: var(--color-bg);
-    border: 1px solid var(--color-bg-secondary);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow) var(--color-shadow);
-    display: none;
-    height: auto;
-    left: -2px;
-    padding: .5rem 1rem;
-    position: absolute;
-    top: 1.7rem;
-    white-space: nowrap;
-    width: auto;
-}
-
-nav ul li ul li,
-nav ul li ul li a {
-    display: block;
 }
 
 /* Typography */
@@ -178,13 +233,12 @@ samp {
     background-color: var(--color-accent);
     border-radius: var(--border-radius);
     color: var(--color-text);
-    display: inline-block;
-    margin: 0 0.1rem;
-    padding: 0 0.5rem;
+    margin: var(--zero-to-dotone);
+    padding: var(--zero-to-dotfive);
 }
 
 details {
-    margin: 1.3rem 0;
+    margin: var(--onedotthree-to-zero);
 }
 
 details summary {
@@ -192,40 +246,29 @@ details summary {
     cursor: pointer;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    line-height: var(--line-height);
-}
-
 mark {
-    padding: 0.1rem;
+    padding: var(--dotone);
 }
 
 ol li,
 ul li {
-    padding: 0.2rem 0;
+    padding: var(--dottwo-to-zero);
 }
 
 p {
-    margin: 0.75rem 0;
-    padding: 0;
+    margin: var(--dotseven-to-zero);
 }
 
 pre {
-    margin: 1rem 0;
+    margin: var(--one-to-zero);
     max-width: var(--width-card-wide);
-    padding: 1rem 0;
+    padding: var(--one-to-zero);
 }
 
 pre code,
 pre samp {
-    display: block;
     max-width: var(--width-card-wide);
-    padding: 0.5rem 2rem;
+    padding: var(--dotfive-to-two);
     white-space: pre-wrap;
 }
 
@@ -239,16 +282,15 @@ sup {
     color: var(--color-bg);
     font-size: xx-small;
     font-weight: bold;
-    margin: 0.2rem;
-    padding: 0.2rem 0.3rem;
+    margin: var(--dottwo);
+    padding: var(--dottwo-to-dotthree);
     position: relative;
-    top: -2px;
+    top: -1 * var(--twopx);
 }
 
 /* Links */
 a {
     color: var(--color-secondary);
-    display: inline-block;
     font-weight: bold;
     text-decoration: none;
 }
@@ -264,12 +306,10 @@ a i,
 a strong,
 button {
     border-radius: var(--border-radius);
-    display: inline-block;
     font-size: medium;
     font-weight: bold;
-    line-height: var(--line-height);
-    margin: 0.5rem 0;
-    padding: 1rem 2rem;
+    margin: var(--dotfive-to-zero);
+    padding: var(--one-to-two);
 }
 
 button {
@@ -285,23 +325,21 @@ a b,
 a strong,
 button {
     background-color: var(--color);
-    border: 2px solid var(--color);
+    border: var(--twopx) solid var(--color);
     color: var(--color-bg);
 }
 
 a em,
 a i {
-    border: 2px solid var(--color);
+    border: var(--twopx) solid var(--color);
     border-radius: var(--border-radius);
     color: var(--color);
-    display: inline-block;
-    padding: 1rem 2rem;
+    padding: var(--one-to-two);
 }
 
 /* Images */
 figure {
     margin: 0;
-    padding: 0;
 }
 
 figure img {
@@ -313,7 +351,6 @@ figure figcaption {
 }
 
 /* Forms */
-
 button:disabled,
 input:disabled {
     background: var(--color-bg-secondary);
@@ -327,50 +364,42 @@ button[disabled]:hover {
 }
 
 form {
-    border: 1px solid var(--color-bg-secondary);
+    border: var(--onepx) solid var(--color-bg-secondary);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow) var(--color-shadow);
-    display: block;
     max-width: var(--width-card-wide);
     min-width: var(--width-card);
-    padding: 1.5rem;
+    padding: var(--onedothalf);
     text-align: var(--justify-normal);
 }
 
 form header {
-    margin: 1.5rem 0;
-    padding: 1.5rem 0;
+    margin: var(--onedothalf-to-zero);
+    padding: var(--onedothalf-to-zero);
 }
 
 input,
 label,
 select,
 textarea {
-    display: block;
     font-size: inherit;
     max-width: var(--width-card-wide);
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-    display: inline-block;
-}
-
 input[type="checkbox"]+label,
 input[type="radio"]+label {
-    display: inline-block;
     font-weight: normal;
     position: relative;
-    top: 1px;
+    top: var(--onepx);
 }
 
 input,
 select,
 textarea {
-    border: 1px solid var(--color-bg-secondary);
+    border: var(--onepx) solid var(--color-bg-secondary);
     border-radius: var(--border-radius);
-    margin-bottom: 1rem;
-    padding: 0.4rem 0.8rem;
+    margin-bottom: var(--one);
+    padding: var(--dotfour-to-doteight);
 }
 
 input[readonly],
@@ -380,25 +409,23 @@ textarea[readonly] {
 
 label {
     font-weight: bold;
-    margin-bottom: 0.2rem;
+    margin-bottom: var(--dottwo);
 }
 
 /* Tables */
 table {
-    border: 1px solid var(--color-bg-secondary);
+    border: var(--onepx) solid var(--color-bg-secondary);
     border-radius: var(--border-radius);
     border-spacing: 0;
-    display: inline-block;
     max-width: 100%;
     overflow-x: auto;
-    padding: 0;
     white-space: nowrap;
 }
 
 table td,
 table th,
 table tr {
-    padding: 0.4rem 0.8rem;
+    padding: var(--dotfour-to-doteight);
     text-align: var(--justify-important);
 }
 
@@ -407,8 +434,6 @@ table thead {
     border-collapse: collapse;
     border-radius: var(--border-radius);
     color: var(--color-bg);
-    margin: 0;
-    padding: 0;
 }
 
 table thead th:first-child {
@@ -430,19 +455,15 @@ table tr:nth-child(even) {
 
 /* Quotes */
 blockquote {
-    display: block;
     font-size: x-large;
-    line-height: var(--line-height);
-    margin: 1rem auto;
+    margin: var(--one-to-auto);
     max-width: var(--width-card-medium);
-    padding: 1.5rem 1rem;
+    padding: var(--onedothalf-to-one);
     text-align: var(--justify-important);
 }
 
 blockquote footer {
     color: var(--color-text-secondary);
-    display: block;
     font-size: small;
-    line-height: var(--line-height);
-    padding: 1.5rem 0;
+    padding: var(--onedothalf-to-zero);
 }
