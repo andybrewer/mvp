@@ -165,6 +165,7 @@ nav ul li ul {
     top: 1.7rem;
     white-space: nowrap;
     width: auto;
+    z-index: 1;
 }
 
 nav ul li ul li,
