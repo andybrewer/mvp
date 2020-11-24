@@ -167,6 +167,16 @@ nav ul li ul {
     width: auto;
 }
 
+nav ul li ul::before {
+  /* fill gap above to make mousing over them easier */
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -0.5rem;
+  height: 0.5rem;
+}
+
 nav ul li ul li,
 nav ul li ul li a {
     display: block;
