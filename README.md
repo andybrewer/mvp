@@ -65,3 +65,8 @@ NPM: https://www.npmjs.com/package/mvp.css
 * [martin-v](https://github.com/martin-v)
 * [GrosSacASac](https://github.com/GrosSacASac)
 * [afeld](https://github.com/afeld)
+
+## Showcase
+* https://searchcode.com/
+* https://www.thebearontheroof.com/
+
