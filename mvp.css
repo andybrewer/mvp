@@ -99,10 +99,6 @@ section aside:hover {
     box-shadow: var(--box-shadow) var(--color-bg-secondary);
 }
 
-section aside img {
-    max-width: 100%;
-}
-
 [hidden] {
     display: none;
 }

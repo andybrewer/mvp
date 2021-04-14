@@ -14,6 +14,12 @@ NPM: https://www.npmjs.com/package/mvp.css
 
 ## Versions
 
+### v1.7
+* Updated `<a>` to use `--color` (primary color)
+* Updated `<section>` to handle overflow content
+* Updated `<section><img>` and `<article><img>` to with within their containers by default
+* Added a showcase section to README
+
 ### v1.6
 * Added `[hidden]` styling to hide hidden elements
 * Updated alternate table rows to use `--color-accent` for a more branded look
@@ -65,8 +71,10 @@ NPM: https://www.npmjs.com/package/mvp.css
 * [martin-v](https://github.com/martin-v)
 * [GrosSacASac](https://github.com/GrosSacASac)
 * [afeld](https://github.com/afeld)
+* [ScottGuthart](https://github.com/ScottGuthart)
 
 ## Showcase
 * https://searchcode.com/
 * https://www.thebearontheroof.com/
 
+To submit your site built with MVP.css create a pull request or an issue. For pull requests, please keep sites in alphabetical order.
