@@ -72,6 +72,7 @@ NPM: https://www.npmjs.com/package/mvp.css
 * [GrosSacASac](https://github.com/GrosSacASac)
 * [afeld](https://github.com/afeld)
 * [ScottGuthart](https://github.com/ScottGuthart)
+* [ctp52](https://github.com/ctp52)
 
 ## Showcase
 * https://searchcode.com/

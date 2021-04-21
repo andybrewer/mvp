@@ -1,4 +1,4 @@
-/* MVP.css v1.7 - https://github.com/andybrewer/mvp */
+/* MVP.css v1.7.1 - https://github.com/andybrewer/mvp */
 
 :root {
     --border-radius: 5px;
@@ -84,6 +84,11 @@ article img {
 
 section * {
     overflow: auto;
+}
+
+section ol li,
+section ul li {
+    overflow: visible;
 }
 
 section aside {
