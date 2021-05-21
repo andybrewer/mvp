@@ -230,6 +230,7 @@ ul li {
 p {
     margin: 0.75rem 0;
     padding: 0;
+    width: 100%;
 }
 
 pre {
