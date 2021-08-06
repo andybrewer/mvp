@@ -1,6 +1,7 @@
 /* MVP.css v1.7.4 - https://github.com/andybrewer/mvp */
 
 :root {
+    --active-brightness: 0.85;
     --border-radius: 5px;
     --box-shadow: 2px 2px 10px;
     --color: #118bee;
@@ -296,6 +297,10 @@ button {
 button:hover {
     cursor: pointer;
     filter: brightness(var(--hover-brightness));
+}
+
+button:active {
+    filter: brightness(var(--active-brightness));
 }
 
 a b,
