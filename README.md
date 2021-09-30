@@ -14,6 +14,12 @@ NPM: https://www.npmjs.com/package/mvp.css
 
 ## Versions
 
+### v1.8
+* Updated `<p>` to be full width
+* Added `--color-link` and `--color-table` variables
+* Added `--active-brightness` variable plus `a:active` and `button:active` styles
+* Uncommented dark mode
+
 ### v1.7
 * Updated `<a>` to use `--color` (primary color)
 * Updated `<section>` to handle overflow content
