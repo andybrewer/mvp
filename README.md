@@ -76,6 +76,7 @@ NPM: https://www.npmjs.com/package/mvp.css
 
 ## Showcase
 * https://bliss.js.org/
+* http://nextvita.vercel.app/
 * https://searchcode.com/
 * https://www.thebearontheroof.com/
 
