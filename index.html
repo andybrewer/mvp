@@ -38,6 +38,14 @@
                 toggleTag.innerHTML = 'Dark Mode';
             }
         }
+
+        // if dark mode is on by default
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            let bodyTag = document.getElementsByTagName('body')[0];
+            let toggleTag = document.getElementById('colorToggle');
+            bodyTag.classList = 'darkMode';
+            toggleTag.innerHTML = 'Light Mode';
+        }
     </script>
 </head>
 
