@@ -40,12 +40,16 @@
         }
 
         // if dark mode is on by default
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            let bodyTag = document.getElementsByTagName('body')[0];
-            let toggleTag = document.getElementById('colorToggle');
-            bodyTag.classList = 'darkMode';
-            toggleTag.innerHTML = 'Light Mode';
+        function handleDarkMode() {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                let bodyTag = document.getElementsByTagName('body')[0];
+                let toggleTag = document.getElementById('colorToggle');
+                bodyTag.classList = 'darkMode';
+                toggleTag.innerHTML = 'Light Mode';
+            }
         }
+
+        window.onload = handleDarkMode;
     </script>
 </head>
 
