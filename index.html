@@ -13,39 +13,56 @@
 
     <style>
         body.darkMode {
-            --color: #0097fc !important;
-            --color-accent: #0097fc4f !important;
-            --color-bg: #333 !important;
-            --color-bg-secondary: #555 !important;
-            --color-link: #0097fc !important;
-            --color-secondary: #e20de9 !important;
-            --color-secondary-accent: #e20de94f !important;
-            --color-shadow: #bbbbbb20 !important;
-            --color-table: #0097fc !important;
-            --color-text: #f7f7f7 !important;
-            --color-text-secondary: #aaa !important;
+            --color: #0097fc;
+            --color-accent: #0097fc4f;
+            --color-bg: #333;
+            --color-bg-secondary: #555;
+            --color-link: #0097fc;
+            --color-secondary: #e20de9;
+            --color-secondary-accent: #e20de94f;
+            --color-shadow: #bbbbbb20;
+            --color-table: #0097fc;
+            --color-text: #f7f7f7;
+            --color-text-secondary: #aaa;
+        }
+
+        body.lightMode {
+            --color: #118bee;
+            --color-accent: #118bee15;
+            --color-bg: #fff;
+            --color-bg-secondary: #e9e9e9;
+            --color-link: #118bee;
+            --color-secondary: #920de9;
+            --color-secondary-accent: #920de90b;
+            --color-shadow: #f4f4f4;
+            --color-table: #118bee;
+            --color-text: #000;
+            --color-text-secondary: #999;
         }
     </style>
     <script>
         function toggleDarkMode() {
             let bodyTag = document.getElementsByTagName('body')[0];
             let toggleTag = document.getElementById('colorToggle');
-            if (bodyTag.classList.length == 0) {
-                bodyTag.classList = 'darkMode';
+            
+            if (bodyTag.classList.contains('lightMode')) {
+                bodyTag.classList.replace('lightMode', 'darkMode');
                 toggleTag.innerHTML = 'Light Mode';
             } else {
-                bodyTag.classList = '';
+                bodyTag.classList.replace('darkMode', 'lightMode');
                 toggleTag.innerHTML = 'Dark Mode';
             }
         }
 
-        // if dark mode is on by default
         function handleDarkMode() {
+            let bodyTag = document.getElementsByTagName('body')[0];
+            let toggleTag = document.getElementById('colorToggle');
             if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                let bodyTag = document.getElementsByTagName('body')[0];
-                let toggleTag = document.getElementById('colorToggle');
-                bodyTag.classList = 'darkMode';
+                bodyTag.classList.add('darkMode');
                 toggleTag.innerHTML = 'Light Mode';
+            } else {
+                bodyTag.classList.add('lightMode');
+                toggleTag.innerHTML = 'Dark Mode';
             }
         }
 
