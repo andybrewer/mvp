@@ -88,5 +88,6 @@ NPM: https://www.npmjs.com/package/mvp.css
 * http://nextvita.vercel.app/
 * https://searchcode.com/
 * https://www.thebearontheroof.com/
+* https://figmage.com/
 
 To submit your site built with MVP.css create a pull request or an issue. For pull requests, please keep sites in alphabetical order.
