@@ -84,6 +84,7 @@ NPM: https://www.npmjs.com/package/mvp.css
 
 ## Showcase
 * https://bliss.js.org/
+* https://chrisbilger.com/
 * https://figmage.com/
 * https://geozip.xyz
 * http://nextvita.vercel.app/
