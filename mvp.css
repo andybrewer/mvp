@@ -398,6 +398,12 @@ input[type="radio"]+label {
     top: 1px;
 }
 
+input[type="range"] {
+    padding: 0.4rem 0;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+}
+
 input,
 select,
 textarea {
