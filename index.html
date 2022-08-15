@@ -11,63 +11,6 @@
 
     <title>MVP.css - Minimalist stylesheet for HTML elements</title>
 
-    <style>
-        body.darkMode {
-            --color: #0097fc;
-            --color-accent: #0097fc4f;
-            --color-bg: #333;
-            --color-bg-secondary: #555;
-            --color-link: #0097fc;
-            --color-secondary: #e20de9;
-            --color-secondary-accent: #e20de94f;
-            --color-shadow: #bbbbbb20;
-            --color-table: #0097fc;
-            --color-text: #f7f7f7;
-            --color-text-secondary: #aaa;
-        }
-
-        body.lightMode {
-            --color: #118bee;
-            --color-accent: #118bee15;
-            --color-bg: #fff;
-            --color-bg-secondary: #e9e9e9;
-            --color-link: #118bee;
-            --color-secondary: #920de9;
-            --color-secondary-accent: #920de90b;
-            --color-shadow: #f4f4f4;
-            --color-table: #118bee;
-            --color-text: #000;
-            --color-text-secondary: #999;
-        }
-    </style>
-    <script>
-        function toggleDarkMode() {
-            let bodyTag = document.getElementsByTagName('body')[0];
-            let toggleTag = document.getElementById('colorToggle');
-            
-            if (bodyTag.classList.contains('lightMode')) {
-                bodyTag.classList.replace('lightMode', 'darkMode');
-                toggleTag.innerHTML = 'Light Mode';
-            } else {
-                bodyTag.classList.replace('darkMode', 'lightMode');
-                toggleTag.innerHTML = 'Dark Mode';
-            }
-        }
-
-        function handleDarkMode() {
-            let bodyTag = document.getElementsByTagName('body')[0];
-            let toggleTag = document.getElementById('colorToggle');
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                bodyTag.classList.add('darkMode');
-                toggleTag.innerHTML = 'Light Mode';
-            } else {
-                bodyTag.classList.add('lightMode');
-                toggleTag.innerHTML = 'Dark Mode';
-            }
-        }
-
-        window.onload = handleDarkMode;
-    </script>
 </head>
 
 <body>
@@ -384,6 +327,10 @@
                 </ul>
             </details>
             <details>
+                <summary>How do I handle a user's dark mode preference?</summary>
+                <p>By default <code>&lt;html&gt;</code> will force users into light mode. By using <code>&lt;html color-mode="user"&gt;</code> MVP.css will respect the user's dark mode preferences. The original concept and additional tips can be found in this article: <a href="https://ryanfeigenbaum.com/dark-mode/" target="_ext">https://ryanfeigenbaum.com/dark-mode/</a></p>
+            </details>
+            <details>
                 <summary>What if I don't like the default styles?</summary>
                 <p>Most styles are editable through <em>CSS variables</em>. You can also add your own styles
                     inline, at the end of MVP.css or in a new stylesheet.</p>
@@ -443,6 +390,8 @@
                     for="focus-service">Service</label>
                 <input type="checkbox" id="focus-features" name="focus[]" value="features"> <label
                     for="focus-features">Features</label>
+                <label for="valuation">Valuation:</label>
+                <input type="range" id="valuation" name="valuation" value="50" />
                 <br>
                 <button type="submit" onclick="newIdea(); return false;">Submit</button>
                 <div id="results" style="max-width: 100%;">
@@ -468,8 +417,9 @@
             let founders = document.querySelector("input[name='founders']:checked").value;
             let hobby = document.getElementById("hobby").value || "design";
             let model = document.getElementById("model").value;
+            let valuation = document.getElementById("valuation").value;
 
-            document.getElementById("results").innerHTML = `<br><h3>Amazing Idea &mdash;</h3><p>A ${model} <mark><b>${company} for ${hobby}</b></mark><br>with ${founders} and a focus on<br>${focus}.</p>`;
+            document.getElementById("results").innerHTML = `<br><h3>Amazing Idea &mdash;</h3><p>A ${model} <mark><b>${company} for ${hobby}</b></mark><br>with ${founders} and a focus on<br>${focus} and targeting a $${valuation}B valuation.</p>`;
         }
     </script>
 </body>

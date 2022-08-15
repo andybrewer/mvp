@@ -1,4 +1,4 @@
-/* MVP.css v1.8 - https://github.com/andybrewer/mvp */
+/* MVP.css v1.9 - https://github.com/andybrewer/mvp */
 
 :root {
     --active-brightness: 0.85;
@@ -27,7 +27,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
+    :root[color-mode="user"] {
         --color: #0097fc;
         --color-accent: #0097fc4f;
         --color-bg: #333;
@@ -396,6 +396,10 @@ input[type="radio"]+label {
     font-weight: normal;
     position: relative;
     top: 1px;
+}
+
+input[type="range"] {
+    padding: 0.4rem 0;
 }
 
 input,
