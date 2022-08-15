@@ -16,7 +16,7 @@ NPM: https://www.npmjs.com/package/mvp.css
 
 ### v1.9
 * Updated `<input type-"range">` styling to allow user to select all numerical values
-* Defaulted to using light-mode with the option to handle a user's dark mode preference by using `<html color-mode="user">`
+* Added the option to handle a user's dark mode preference by using `<html color-mode="user">` 
 
 ### v1.8
 * Updated `<p>` to be full width
