@@ -14,6 +14,9 @@ NPM: https://www.npmjs.com/package/mvp.css
 
 ## Versions
 
+### v1.9
+* Updated `<input type-"range">` styling to allow user to select all numerical values
+
 ### v1.8
 * Updated `<p>` to be full width
 * Added `--color-link` and `--color-table` variables
