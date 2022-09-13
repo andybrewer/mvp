@@ -8,11 +8,14 @@ Out of the box CSS styling for HTML elements. No class names, no framework to le
 
 Live demo: https://andybrewer.github.io/mvp/
 
-Unpkg: https://unpkg.com/mvp.css@1.9.0/mvp.css
+Unpkg: https://unpkg.com/mvp.css@1.10.0/mvp.css
 
 NPM: https://www.npmjs.com/package/mvp.css
 
 ## Versions
+
+### v1.10
+* Updated `<input>` and `<textarea>` styling to be full-width elements 
 
 ### v1.9
 * Updated `<input type-"range">` styling to allow user to select all numerical values
