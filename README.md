@@ -13,7 +13,7 @@ NPM: https://www.npmjs.com/package/mvp.css
 ## Versions
 
 ### v1.10.1
-* Updated `<input>` and `<textarea>` styling to be full-width elements 
+* Updated `<input type="text">` and `<textarea>` styling to be full-width elements 
 
 ### v1.9
 * Updated `<input type-"range">` styling to allow user to select all numerical values
