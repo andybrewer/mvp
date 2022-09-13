@@ -4,11 +4,9 @@
 
 Out of the box CSS styling for HTML elements. No class names, no framework to learn.
 
-`<link rel="stylesheet" href="https://unpkg.com/mvp.css@1.10.0/mvp.css">`
-
 Live demo: https://andybrewer.github.io/mvp/
 
-Unpkg: https://unpkg.com/mvp.css@1.10.0/mvp.css
+Unpkg: https://unpkg.com/mvp.css@1.10.1/mvp.css
 
 NPM: https://www.npmjs.com/package/mvp.css
 
