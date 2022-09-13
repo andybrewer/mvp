@@ -16,7 +16,7 @@ NPM: https://www.npmjs.com/package/mvp.css
 * Updated `<input type="text">` and `<textarea>` styling to be full-width elements 
 
 ### v1.9
-* Updated `<input type-"range">` styling to allow user to select all numerical values
+* Updated `<input type="range">` styling to allow user to select all numerical values
 * Added the option to handle a user's dark mode preference by using `<html color-mode="user">` 
 
 ### v1.8
