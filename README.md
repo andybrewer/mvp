@@ -12,7 +12,7 @@ NPM: https://www.npmjs.com/package/mvp.css
 
 ## Versions
 
-### v1.10
+### v1.10.1
 * Updated `<input>` and `<textarea>` styling to be full-width elements 
 
 ### v1.9
