@@ -31,7 +31,7 @@
                 download="mvp.css" href="./mvp.css" target="_blank"><b>Download MVP.css (9kb) &nearr;</b></a></p>
         <br><br>
         <p><sup>PRO TIP</sup> Add this code to a new HTML
-            file:<br><br><code>&lt;link rel="stylesheet" href="https://unpkg.com/mvp.css@1.10.2/mvp.css"&gt;</code></p>
+            file:<br><br><code>&lt;link rel="stylesheet" href="https://unpkg.com/mvp.css@1.11/mvp.css"&gt;</code></p>
     </header>
     <main>
         <hr>
@@ -391,11 +391,12 @@
                 <label for="valuation">Valuation:</label>
                 <input type="range" id="valuation" name="valuation" value="50" />
                 <br>
-                <button type="submit" onclick="newIdea(); return false;">Submit</button>
-                <div id="results" style="max-width: 100%;">
-
-                </div>
+                <button type="submit" id="show">Submit</button>
             </form>
+            <dialog id="popup">
+                <div id="results"></div>
+                <button id="close">Close</button>
+            </dialog>
         </section>
     </main>
     <footer>
@@ -407,7 +408,8 @@
     </footer>
 
     <script>
-        function newIdea() {
+        var dialog = document.getElementById('popup');
+        document.querySelector('#show').onclick = function() {
             let company = document.getElementById("company").value || "GitHub";
             let focusAreas = [];
             document.querySelectorAll("input[name='focus[]']:checked").forEach(el => { focusAreas.push(el.value) });
@@ -417,8 +419,14 @@
             let model = document.getElementById("model").value;
             let valuation = document.getElementById("valuation").value;
 
-            document.getElementById("results").innerHTML = `<br><h3>Amazing Idea &mdash;</h3><p>A ${model} <mark><b>${company} for ${hobby}</b></mark><br>with ${founders} and a focus on<br>${focus} and targeting a $${valuation}B valuation.</p>`;
-        }
+            document.getElementById("results").innerHTML = `<h3>Amazing Idea &mdash;</h3><p>A ${model} <mark><b>${company} for ${hobby}</b></mark> with ${founders} and a focus on ${focus}, targeting a $${valuation}B valuation.</p>`;
+            dialog.show();
+            return false;
+        };
+        document.querySelector('#close').onclick = function() {
+            dialog.close();
+            return false;
+        };
     </script>
 </body>
 

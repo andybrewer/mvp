@@ -6,11 +6,14 @@ Out of the box CSS styling for HTML elements. No class names, no framework to le
 
 Live demo: https://andybrewer.github.io/mvp/
 
-Unpkg: https://unpkg.com/mvp.css@1.10.2/mvp.css
+Unpkg: https://unpkg.com/mvp.css@1.11/mvp.css
 
 NPM: https://www.npmjs.com/package/mvp.css
 
 ## Versions
+
+### v1.11
+* Styled `<dialog>` element 
 
 ### v1.10.2
 * Updated `<input type="text">` and `<textarea>` styling to be full-width elements 

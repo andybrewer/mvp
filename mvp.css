@@ -1,4 +1,4 @@
-/* MVP.css v1.10.2 - https://github.com/andybrewer/mvp */
+/* MVP.css v1.11 - https://github.com/andybrewer/mvp */
 
 :root {
     --active-brightness: 0.85;
@@ -345,7 +345,6 @@ figure figcaption {
 }
 
 /* Forms */
-
 button:disabled,
 input:disabled {
     background: var(--color-bg-secondary);
@@ -422,6 +421,19 @@ textarea[readonly] {
 label {
     font-weight: bold;
     margin-bottom: 0.2rem;
+}
+
+/* Popups */
+dialog {
+    border: 1px solid var(--color-bg-secondary);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow) var(--color-shadow);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    z-index: 999;
 }
 
 /* Tables */
