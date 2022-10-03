@@ -1,4 +1,4 @@
-/* MVP.css v1.11 - https://github.com/andybrewer/mvp */
+/* MVP.css v1.12 - https://github.com/andybrewer/mvp */
 
 :root {
     --active-brightness: 0.85;
@@ -286,7 +286,8 @@ a b,
 a em,
 a i,
 a strong,
-button {
+button,
+input[type="submit"] {
     border-radius: var(--border-radius);
     display: inline-block;
     font-size: medium;
@@ -296,22 +297,26 @@ button {
     padding: 1rem 2rem;
 }
 
-button {
+button,
+input[type="submit"] {
     font-family: var(--font-family);
 }
 
-button:active {
+button:active,
+input[type="submit"]:active {
     filter: brightness(var(--active-brightness));
 }
 
-button:hover {
+button:hover,
+input[type="submit"]:hover {
     cursor: pointer;
     filter: brightness(var(--hover-brightness));
 }
 
 a b,
 a strong,
-button {
+button,
+input[type="submit"] {
     background-color: var(--color-link);
     border: 2px solid var(--color-link);
     color: var(--color-bg);
@@ -353,7 +358,8 @@ input:disabled {
     cursor: not-allowed;
 }
 
-button[disabled]:hover {
+button[disabled]:hover,
+input[type="submit"][disabled]:hover {
     filter: none;
 }
 

@@ -6,11 +6,14 @@ Out of the box CSS styling for HTML elements. No class names, no framework to le
 
 Live demo: https://andybrewer.github.io/mvp/
 
-Unpkg: https://unpkg.com/mvp.css@1.11/mvp.css
+Unpkg: https://unpkg.com/mvp.css@1.12/mvp.css
 
 NPM: https://www.npmjs.com/package/mvp.css
 
 ## Versions
+
+### v1.12
+* Styled `<input type="submit">` element to be the same as `<button>`
 
 ### v1.11
 * Styled `<dialog>` element 
