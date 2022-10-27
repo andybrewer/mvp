@@ -1,5 +1,49 @@
 /* MVP.css v1.12 - https://github.com/andybrewer/mvp */
-
+.check{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.copy-link {
+    --height: 36px;
+  
+    display: flex;
+    width: 520px;
+    max-width: 520px;
+    /* margin-left: 250px; */
+  }
+  
+  .copy-link-input {
+    flex-grow: 1;
+    padding: 0 8px;
+    font-size: 14px;
+    height: 33px;
+    width: 240px;
+    border: 1px solid #cccccc;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-right: none;
+    outline: none;
+  }
+  
+  .copy-link-button {
+    flex-shrink: 0;
+    width: var(--height);
+    height: var(--height);
+    position: relative;
+    bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:  #118bee;
+    color: #dddddd;
+    outline: none;
+    border: 1px solid #cccccc;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    cursor: pointer;
+  }
 :root {
     --active-brightness: 0.85;
     --border-radius: 5px;

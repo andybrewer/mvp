@@ -8,6 +8,9 @@
     <meta charset="utf-8">
     <meta name="description" content="MVP.css - No classes, no framework. Just semantic HTML and you're done.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>MVP.css - Minimalist stylesheet for HTML elements</title>
 
@@ -30,8 +33,23 @@
         <p><a download="mvp.html" href="./mvp.html" target="_blank"><i>Download HTML &nearr;</i></a><a
                 download="mvp.css" href="./mvp.css" target="_blank"><b>Download MVP.css (9kb) &nearr;</b></a></p>
         <br><br>
-        <p><sup>PRO TIP</sup> Add this code to a new HTML
-            file:<br><br><code>&lt;link rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css"&gt;</code></p>
+        <div class="check">
+            <div>
+                <p><sup>PRO TIP</sup> Add this code to a new HTML
+                    file: <br><br>
+                </p>
+            </div>
+
+            <div class="copy-link">
+                <!-- <textarea class="copy-link-input"><link rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css"></textarea> -->
+                <input type="text" class="copy-link-input"
+                    value="<link rel=&#147stylesheet&#148 href=&#147https://unpkg.com/mvp.css@1.12/mvp.css&#148>"
+                    readonly>
+                <button type="button" class="copy-link-button">
+                    <i class="fa fa-clone"></i>
+                </button>
+            </div>
+        </div>
     </header>
     <main>
         <hr>
@@ -200,7 +218,8 @@
                 </li>
                 <li><code>&lt;header&gt;</code> <small>&mdash; content area with centered styling</small></li>
                 <li><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>,
-                    <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code> <small>&mdash; headings</small></li>
+                    <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code> <small>&mdash; headings</small>
+                </li>
                 <li><code>&lt;hr&gt;</code> <small>&mdash; horizontal rule (divider)</small></li>
                 <li><code>&lt;main&gt;</code> <small>&mdash; main content area</small></li>
                 <li><code>&lt;mark&gt;</code> <small>&mdash; text highlighting</small></li>
@@ -281,7 +300,8 @@
                 </code>
             </pre>
 
-            <p>Custom styles can be added inside a <code>&lt;style&gt;</code> tag, or at the end of your local <code>mvp.css</code> file</p>
+            <p>Custom styles can be added inside a <code>&lt;style&gt;</code> tag, or at the end of your local
+                <code>mvp.css</code> file</p>
         </article>
         <hr>
         <article id="faq">
@@ -327,7 +347,11 @@
             </details>
             <details>
                 <summary>How do I handle a user's dark mode preference?</summary>
-                <p>By default <code>&lt;html&gt;</code> will force users into light mode. By using <code>&lt;html color-mode="user"&gt;</code> MVP.css will respect the user's dark mode preferences. The original concept and additional tips can be found in this article: <a href="https://ryanfeigenbaum.com/dark-mode/" target="_ext">https://ryanfeigenbaum.com/dark-mode/</a></p>
+                <p>By default <code>&lt;html&gt;</code> will force users into light mode. By using
+                    <code>&lt;html color-mode="user"&gt;</code> MVP.css will respect the user's dark mode preferences.
+                    The original concept and additional tips can be found in this article: <a
+                        href="https://ryanfeigenbaum.com/dark-mode/"
+                        target="_ext">https://ryanfeigenbaum.com/dark-mode/</a></p>
             </details>
             <details>
                 <summary>What if I don't like the default styles?</summary>
@@ -410,7 +434,7 @@
 
     <script>
         var dialog = document.getElementById('popup');
-        document.querySelector('#show').onclick = function() {
+        document.querySelector('#show').onclick = function () {
             let company = document.getElementById("company").value || "GitHub";
             let focusAreas = [];
             document.querySelectorAll("input[name='focus[]']:checked").forEach(el => { focusAreas.push(el.value) });
@@ -424,10 +448,26 @@
             dialog.show();
             return false;
         };
-        document.querySelector('#close').onclick = function() {
+        document.querySelector('#close').onclick = function () {
             dialog.close();
             return false;
         };
+
+        document.querySelectorAll(".copy-link").forEach((copyLinkParent) => {
+            const inputField = copyLinkParent.querySelector(".copy-link-input");
+            const copyButton = copyLinkParent.querySelector(".copy-link-button");
+            const text = inputField.value;
+
+            inputField.addEventListener("focus", () => inputField.select());
+
+            copyButton.addEventListener("click", () => {
+                inputField.select();
+                navigator.clipboard.writeText(text);
+
+                inputField.value = "Copied!";
+                setTimeout(() => (inputField.value = text), 2000);
+            });
+        });
     </script>
 </body>
 
