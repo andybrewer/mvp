@@ -269,17 +269,15 @@ a {
     color: var(--color-link);
     display: inline-block;
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:active {
     filter: brightness(var(--active-brightness));
-    text-decoration: underline;
 }
 
 a:hover {
     filter: brightness(var(--hover-brightness));
-    text-decoration: underline;
 }
 
 a b,
