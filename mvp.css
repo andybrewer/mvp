@@ -503,3 +503,23 @@ blockquote footer {
     line-height: var(--line-height);
     padding: 1.5rem 0;
 }
+
+/* Scrollbars */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: rgb(202, 202, 232) auto;
+}
+
+*::-webkit-scrollbar {
+	width: 5px;
+	height:5px;
+}
+
+*::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color:rgb(202, 202, 232);
+	border-radius: 10px;
+}
