@@ -19,6 +19,7 @@
     --justify-important: center;
     --justify-normal: left;
     --line-height: 1.5;
+    --marked: #ffdd33;	
     --width-card: 285px;
     --width-card-medium: 460px;
     --width-card-wide: 800px;
@@ -522,4 +523,11 @@ blockquote footer {
 *::-webkit-scrollbar-thumb {
 	background-color:rgb(202, 202, 232);
 	border-radius: 10px;
+}
+
+mark {
+  padding: 2px 5px;
+  border-radius: var(--standard-border-radius);
+  background-color: var(--marked);
+  color: black;
 }
