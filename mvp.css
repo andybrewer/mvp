@@ -24,6 +24,8 @@
     --width-card-medium: 460px;
     --width-card-wide: 800px;
     --width-content: 1080px;
+    --standard-border-radius: 5px;
+
 }
 
 @media (prefers-color-scheme: dark) {
