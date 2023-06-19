@@ -12,18 +12,22 @@ NPM: https://www.npmjs.com/package/mvp.css
 
 ## Versions
 
+### v1.13
+* Styled `<a>` element to be underlined by default
+* Styled scrollbar to be in-line with MVP styling
+
 ### v1.12
 * Styled `<input type="submit">` element to be the same as `<button>`
 
 ### v1.11
-* Styled `<dialog>` element 
+* Styled `<dialog>` element
 
 ### v1.10.2
-* Updated `<input type="text">` and `<textarea>` styling to be full-width elements 
+* Updated `<input type="text">` and `<textarea>` styling to be full-width elements
 
 ### v1.9
 * Updated `<input type="range">` styling to allow user to select all numerical values
-* Added the option to handle a user's dark mode preference by using `<html color-mode="user">` 
+* Added the option to handle a user's dark mode preference by using `<html color-mode="user">`
 
 ### v1.8
 * Updated `<p>` to be full width
