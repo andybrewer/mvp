@@ -1,4 +1,4 @@
-/* MVP.css v1.13 - https://github.com/andybrewer/mvp */
+/* MVP.css v1.14 - https://github.com/andybrewer/mvp */
 
 :root {
     --active-brightness: 0.85;
@@ -516,20 +516,20 @@ blockquote footer {
 
 /* Scrollbars */
 * {
-	scrollbar-width: thin;
-	scrollbar-color: rgb(202, 202, 232) auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(202, 202, 232) auto;
 }
 
 *::-webkit-scrollbar {
-	width: 5px;
-	height:5px;
+    width: 5px;
+    height: 5px;
 }
 
 *::-webkit-scrollbar-track {
-	background: transparent;
+    background: transparent;
 }
 
 *::-webkit-scrollbar-thumb {
-	background-color:rgb(202, 202, 232);
-	border-radius: 10px;
+    background-color: rgb(202, 202, 232);
+    border-radius: 10px;
 }
