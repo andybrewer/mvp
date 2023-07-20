@@ -23,6 +23,8 @@
     --width-card-medium: 460px;
     --width-card-wide: 800px;
     --width-content: 1080px;
+    --icon-arrow-right: url(https://api.iconify.design/ic:keyboard-arrow-right.svg?color=lightsteelblue);
+    --icon-arrow-down: url(https://api.iconify.design/ic:keyboard-arrow-down.svg?color=lightsteelblue);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -213,11 +215,27 @@ samp {
 
 details {
     margin: 1.3rem 0;
+    text-indent: 2rem;
+      &[open] summary {
+        background-image: var(--icon-arrow-down);
+  }
+
 }
 
 details summary {
     font-weight: bold;
     cursor: pointer;
+}
+
+summary {
+  cursor: pointer;
+  list-style: none;
+  display: block;
+  background-image: var(--icon-arrow-right);
+  background-position: 0 center;
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  text-indent: 2rem;
 }
 
 h1,
