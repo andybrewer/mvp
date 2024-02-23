@@ -283,12 +283,12 @@ a {
     text-decoration: underline;
 }
 
-a:active {
-    filter: brightness(var(--active-brightness));
-}
-
 a:hover {
     filter: brightness(var(--hover-brightness));
+}
+
+a:active {
+    filter: brightness(var(--active-brightness));
 }
 
 a b,
@@ -311,15 +311,15 @@ input[type="submit"] {
     font-family: var(--font-family);
 }
 
-button:active,
-input[type="submit"]:active {
-    filter: brightness(var(--active-brightness));
-}
-
 button:hover,
 input[type="submit"]:hover {
     cursor: pointer;
     filter: brightness(var(--hover-brightness));
+}
+
+button:active,
+input[type="submit"]:active {
+    filter: brightness(var(--active-brightness));
 }
 
 a b,
