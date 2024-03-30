@@ -518,7 +518,7 @@ blockquote footer {
 /* Scrollbars */
 * {
     scrollbar-width: thin;
-    scrollbar-color: rgb(202, 202, 232) auto;
+    scrollbar-color: rgb(202, 202, 232) transparent;
 }
 
 *::-webkit-scrollbar {
