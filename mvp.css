@@ -14,6 +14,7 @@
     --color-table: #118bee;
     --color-text: #000;
     --color-text-secondary: #999;
+    --color-scrollbar: #cacae8;
     --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     --hover-brightness: 1.2;
     --justify-important: center;
@@ -518,7 +519,7 @@ blockquote footer {
 /* Scrollbars */
 * {
     scrollbar-width: thin;
-    scrollbar-color: rgb(202, 202, 232) auto;
+    scrollbar-color: var(--color-scrollbar) transparent;
 }
 
 *::-webkit-scrollbar {
@@ -531,6 +532,6 @@ blockquote footer {
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: rgb(202, 202, 232);
+    background-color: var(--color-scrollbar);
     border-radius: 10px;
 }
