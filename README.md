@@ -12,6 +12,13 @@ NPM: <https://www.npmjs.com/package/mvp.css>
 
 ## Versions
 
+### v1.15
+
+* Add `text-wrap: balance`
+* Only apply top border radii on first table header row
+* fix(scrollbar): use transparent as track color
+* feat(scrollbar): adjustable color using variable
+
 ### v1.14
 
 * Added smooth scrolling by default
