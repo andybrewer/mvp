@@ -127,7 +127,6 @@ NPM: <https://www.npmjs.com/package/mvp.css>
 * <https://bliss.js.org/>
 * <https://chrisbilger.com/>
 * <https://figmage.com/>
-* <https://geozip.xyz>
 * <https://www.mondage.com>
 * <http://nextvita.vercel.app/>
 * <https://searchcode.com/>
