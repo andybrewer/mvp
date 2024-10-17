@@ -12,6 +12,12 @@ NPM: <https://www.npmjs.com/package/mvp.css>
 
 ## Versions
 
+### v1.16
+
+* Removed a deadlink from the README.md
+* Add missing comma to restore textarea width
+* Add styles for dialog element & its backdrop
+
 ### v1.15
 
 * Add `text-wrap: balance`
