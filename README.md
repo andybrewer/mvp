@@ -6,10 +6,8 @@ Out of the box CSS styling for HTML elements. No class names, no framework to le
 
 Documentation: <https://andybrewer.github.io/mvp/>
 
-Download: <https://andybrewer.github.io/mvp/mvp.css>
-
 Usage: `<link rel="stylesheet" href="https://unpkg.com/mvp.css">`
 
-Unpkg: <https://unpkg.com/mvp.css>
+Download from Unpkg: <https://unpkg.com/mvp.css>
 
 NPM: <https://www.npmjs.com/package/mvp.css>
