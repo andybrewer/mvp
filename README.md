@@ -8,6 +8,6 @@ Documentation: <https://andybrewer.github.io/mvp/>
 
 Usage: `<link rel="stylesheet" href="https://unpkg.com/mvp.css">`
 
-Download from Unpkg: <https://unpkg.com/mvp.css>
+Download: <https://unpkg.com/mvp.css>
 
 NPM: <https://www.npmjs.com/package/mvp.css>
