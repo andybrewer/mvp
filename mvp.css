@@ -442,15 +442,53 @@ label {
 
 /* Popups */
 dialog {
+    max-width: 90%;
+    max-height: 85dvh;
+    margin: auto;
+    padding: 0;
     border: 1px solid var(--color-bg-secondary);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow) var(--color-shadow);
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    z-index: 999;
+    border-radius: 0.5rem;
+    overscroll-behavior: contain;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+    scrollbar-color: transparent transparent;
+    animation: bottom-to-top 0.25s ease-in-out forwards;
+}
+
+dialog::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+
+dialog::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+dialog::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+@media (min-width: 650px) {
+    dialog {
+        max-width: 39rem;
+    }
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes bottom-to-top {
+    0% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Tables */
