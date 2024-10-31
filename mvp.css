@@ -201,6 +201,23 @@ nav ul li ul li a {
     display: block;
 }
 
+/* Nav for Mobile */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        width: calc(100% - 1em);
+    }
+
+    nav ul li ul {
+        border: none; box-shadow: none;
+        display: block;
+        position: static;
+    }
+}
+
 /* Typography */
 code,
 samp {
