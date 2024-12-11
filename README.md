@@ -1,6 +1,6 @@
 # MVP.css — Minimalist stylesheet for HTML elements
 
-![MVP.css](img/logo.png)
+![MVP.css](img/brand.png)
 
 Out of the box CSS styling for HTML elements. No class names, no framework to learn.
 
