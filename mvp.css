@@ -511,6 +511,10 @@ dialog::backdrop {
   }
 }
 
+dialog hr {
+  margin-block: 1rem;
+}
+
 /* Tables */
 table {
   border: 1px solid var(--color-bg-secondary);
