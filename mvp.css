@@ -170,6 +170,10 @@ nav ul li:hover ul {
   display: block;
 }
 
+nav ul li:focus-within ul {
+  display: block;
+}
+
 nav ul li ul {
   background: var(--color-bg);
   border: 1px solid var(--color-bg-secondary);
@@ -300,6 +304,11 @@ a {
   display: inline-block;
   font-weight: bold;
   text-decoration: underline;
+}
+
+a:visited,
+area:visited {
+  color: var(--color-secondary);
 }
 
 a:hover {
