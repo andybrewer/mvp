@@ -3,6 +3,10 @@
   "version": "1.17.3",
   "description": "A minimalist stylesheet for HTML elements",
   "main": "mvp.css",
+  "style": "mvp.css",
+  "files": [
+    "mvp.css"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/andybrewer/mvp.git"
