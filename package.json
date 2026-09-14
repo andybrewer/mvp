@@ -1,6 +1,6 @@
 {
   "name": "mvp.css",
-  "version": "1.17.3",
+  "version": "1.18.0",
   "description": "A minimalist stylesheet for HTML elements",
   "main": "mvp.css",
   "style": "mvp.css",
