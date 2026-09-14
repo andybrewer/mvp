@@ -218,7 +218,7 @@ nav ul li ul li a {
   nav ul li ul {
     border: none;
     box-shadow: none;
-    display: block;
+    display: none;
     position: static;
   }
 }
